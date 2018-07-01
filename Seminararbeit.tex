@@ -1,12 +1,14 @@
 
-\documentclass[german,11pt,a4paper]{article} % a. Set paper size to Letter, 8½ x 11. 
+\documentclass[german,11pt,a4paper]{report} % a. Set paper size to Letter, 8½ x 11. 
 %\usepackage[letterpaper,margin=1in]{geometry} % e. Set margins of 1 inch (2.54 cm.) on all four sides of the paper. 
 \usepackage[letterpaper,left=3cm,right=3cm, top=3.0cm, bottom=3.0cm, footnotesep=1.0cm]{geometry} 
 \usepackage{mathptmx} % d. ...in a simple roman face except where indicated below (§3). 
-\usepackage[onehalfspacing]{setspace} % b. Set line spacing to 1.5 throughout the document.  
+%\usepackage[onehalfspacing]{setspace} % b. Set line spacing to 1.5 throughout the document.  
 \usepackage{fancyhdr} 
 \usepackage{relsize}
 \usepackage{csquotes}
+\usepackage{caption}
+\usepackage{float}
 
 \usepackage[bottom]{footmisc}
 \usepackage{tabularx}
@@ -44,9 +46,12 @@
 \newcommand*\elide{\textup{[\,\dots]}\xspace}
 
 \begin{document}
-
-\begin{center}\uppercase{Fernuniversität Hagen}\end{center}
-\begin{center}\uppercase{Institut für }\end{center}
+\begin{huge}
+\begin{center}
+       \includegraphics[width=0.8cm]{./logo/logo.eps} FernUniversität in Hagen\\
+				01919 Seminar Programmiersysteme
+    \end{center}
+\end{huge}
 
 \vspace{3cm}
 
@@ -114,12 +119,23 @@ Matrikelnr.: 9601244  \\
 \newpage
 \listoffigures
 \newpage
+\listoftables
+\newpage
 
 
 \pagestyle{fancy}
-\fancyhf{}
-\fancyhead[R]{\thepage}
-\renewcommand{\headrulewidth}{0pt} %obere Trennlinie
+%\fancyhf{}
+%\fancyhead[R]{\thepage}
+%\renewcommand{\headrulewidth}{0pt} %obere Trennlinie
+
+
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\cfoot{\thepage}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhf[cf]{\thepage}%
+}
 
 \include{./chapter/Einleitung} 
 %\section{Einleitung}
@@ -181,6 +197,7 @@ Matrikelnr.: 9601244  \\
 %\subsection{Marktübersicht an Tools}
 %\subsubsection{Kommerziell vs. Kostenlos}
 %\subsubsection{Hosted vs. On-Premise}
+\include{./chapter/Toolübersicht}
 \include{./chapter/Jenkins}
 \include{./chapter/Anwendung}
 
@@ -287,13 +304,13 @@ Matrikelnr.: 9601244  \\
 
 \pagebreak
 
-\addcontentsline{toc}{section}{Literatur}
+\addcontentsline{toc}{chapter}{Literatur}
 \pagestyle{fancy}
 
 %%\bibliographystyle{language-dt} %using language.bst
 %%\bibliography{Seminararbeit} %bib-filename
 
-\defbibheading{head}{\section*{Literatur}}
+\defbibheading{head}{\chapter*{Literatur}}
 \printbibheading[heading=head]
 \printbibliography[type=book, heading=subbibliography, title={Bücher}]
 \printbibliography[type=report, heading=subbibliography, title={Forschungsberichte (Research Papers)}]
@@ -303,11 +320,14 @@ Matrikelnr.: 9601244  \\
 %\nocite{*} %List all bib-entries
 
 \clearpage
-\section*{Abkürzungsverzeichnis}
-\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+\chapter*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 \begin{multicols}{2}
 \begin{acronym}[abr]
 \acro{CI}{Continuous Integration}
+\acro{CD}{Continuous Delivery}
+\acro{SCM}{Source Control Management}
+\acro{TFS}{Team Foundation Server}
 \acro{SCM}{Source Control Management}
 \end{acronym}
 \end{multicols}

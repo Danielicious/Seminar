@@ -1,7 +1,7 @@
 \pagebreak
-\section{Continuous Integration}
+\chapter{Continuous Integration}
 Dieses Kapitel beschäftigt sich mit einem der beiden Hauptthemen, nämlich Continuous Integration. Dabei möchte ich mich diesem Thema zunächst durch eine genaue Begriffsbestimmung nähern, wobei auch eine Abgrenzung zu anderen, ähnlichen Begriffen eine wichtige Rolle spielt. Im weiteren Verlauf sollen dann noch der Einsatz von Tools zur Unterstützung sowie die Gründe zum Einsatz dieser Methodik näher beleuchtet werden.\\
-\subsection{Begriffsklärung}
+\section{Begriffsklärung}
 Den Einstieg soll eine kurze Beschreibung von Martin Fowler bilden, er gilt als der gesitige Vater von Continuous Integration und wird mit diesem Artikel in vielen anderen Abhandlungen zu dem Thema zitiert:
 \begin{center}
 	\textit{
@@ -21,7 +21,7 @@ Es wird dabei eher der Fokus auf die Auswirkungen von Continuous Integration auf
 Er deckt sich damit mit der Sichtweise von Martin Fowler, und beleuchtet das Thema einfach nur aus einem anderen, eher anwendungsbezogenen Blickwinkel. Das ist auch nachvollziehbar, da es sich hier nicht um eine theoretische Abhandlung handelt sondern einen Konferenzbeitrag, der an Anwender dieser Technik gerichtet war.\\
 
 Zusammenfassend bleibt zu sagen dass mit Continuous Integration die Zusammenarbeit eines Entwicklerteams an einer gemeinsamen Code-Basis verbessert werden soll. Dies soll geschehen durch kontinuierliches Zusammenführen der Änderungen aller Beteiligten und das automatisierte Prüfen des Ergebnisses.
-\subsubsection*{Abgrenzung zu anderen Begriffen}
+\subsection{Abgrenzung zu anderen Begriffen}
 Es gibt einige Begriffe die Continuous Integration sehr ähnlich sind. Dieser Abschnitt soll genauer umreißen, wo der Unterschied ist und was sie vielleicht gemeinsam haben.
 \begin{itemize}
 	\item\textbf{Continuous Delivery}\\
@@ -47,7 +47,7 @@ Es gibt einige Begriffe die Continuous Integration sehr ähnlich sind. Dieser Ab
 \end{figure}
 	
 \end{itemize}
-\subsection{Ablauf von Continuous Integration}
+\section{Ablauf von Continuous Integration}
 Da in der Beschreibung von CI die Rede ist vom Integrieren von Code Änderungen, muss es auch irgendwie eine gemeinsame Basis geben, in die diese Änderungen einfließen. Eine solche gemeinsame Basis ist ein sogenanntes Source-Control-Management-System (SCM\footnote{Ab hier werde ich SCM als Abkürzung für "`Source Control Management"' verwenden. Diese Abkürzung ist auch im Abkürzungsverzeichnis zu finden.}). Dabei handelt es sich um ein System, in dem Änderungen an einer Datei, oder der Struktur der Dateien, nachvollziehbar gemacht werden, und man verschiedene Stände abrufen kann.(vgl. \cite{fowler-CI}) Es gibt dazu verschiedene Konzepte, entweder eine zentrale Stelle an der alle Dateien inklusive Historie verwaltet werden, oder verteilte Systeme, bei der es keine ausgezeichnete zentrale Instanz gibt.\\
 \begin{figure}[h]
   \centering
@@ -81,7 +81,7 @@ Da in der Beschreibung von CI die Rede ist vom Integrieren von Code Änderungen,
 %Ein Entwickler nimmt sich nun den aktuellen Stand aus diesem SCM, und führt seine Arbeit aus. Dabei wird bei CI besonders Wert auf Tests gelegt. Dies ist mittlerweile zum Quasistandard in der Sotwareentwicklung geworden, und folgt vom schematischen Aufbau her der Testpyramide, wie sie in (\cite{fowler-Testpyramid}) beschrieben wird.\\
 %Die erste Kontrollinstanz ist nun der automatisierte Build auf der Entwicklermaschine. Darunter versteht man das Kompilieren und Linken der Quellen sowie das Ausführen der zuvor geschriebenen automatisierten Tests. Hierbei beschränkt man sich zumeist auf UnitTests.\\
 %Wenn dieser Schritt zufriedenstellend abgeschlossen ist, können die Änderungen zurück in das SCM geführt werden. Dazu holt der Entwickler sich abermals den aktuellen Stand, und löst potentielle Konflikte auf, die entstanden sind, weil andere Entwickler in der Zwischenzeit ihren Stand eingefügt haben. Lokal hat er nun bereits den neuen Stand, den er nun noch einmal lokal baut und testet. Ist dieser lokale Build erfolgreich, fügt er seine Änderungen dem SCM hinzu. An diesem Punkt startet der automatische Prozess der Buildumgebung. Sobald die Änderungen im Source Control sind, wird ein Build getriggert. Der Einfachheit halber habe ich dabei in Abbildung~\ref{fig:Schema-aufbau} nur einen einzigen Build Server eingefügt. Prinzipiell gibt es eine Orchestrierungs-Instanz und mehrere Build Server. Diese zentrale Instanz koordiniert dabei die Aufgaben und die Server führen diese aus.
-\subsection{Gründe Continuous Integration einzusetzen}
+\section{Gründe Continuous Integration einzusetzen}
 Die Gründe für den Einsatz von Continuous Integration sind sehr vielfältig. Ich möchte im Folgenden eine kleine Auswahl für Gründe geben:
 \begin{enumerate}
 	\item \textbf{Qualität steigern}\\
@@ -91,13 +91,18 @@ Die Gründe für den Einsatz von Continuous Integration sind sehr vielfältig. I
 	\item \textbf{Audit Trail}\\
 	Die Einführung von Praktiken wie Continuous Integration und deren Implementierung als ganzes System helfen immens bei der Softwareentwicklung in regulatorischen Umgebungen. Besonders die FDA\footnote{Food and Drug Administration, eine US Amerikaische Behörde ähnlich dem deutschen Gesundheitsministeriums} macht strikte Vorgaben in Bezug auf die Nachvollziehbarkeit von Änderungen, bzw. dem Einfluss den diese auf ein Produkt haben ("`Audit Trail"').
 	\item \textbf{Schnellerer und spontanerer Release möglich}\\
-	Unter Zuhilfenahme von CI wird der Prozess der Softwareentwicklung weiter voran getrieben als in einem klassischen Setup. Es wird mit jeder Codeänderung getestet und auch die Komponenten untereinander integriert.
-	\item \textbf{}
-\end{enumerate} 
-- Schnellerer Release möglich für Patch
-- Vorsichtigere Entwickler, wenn sie wissen dass da eine Kontrollisntanz ist
-\subsection{Marktübersicht an Tools}
-\subsubsection{Kommerziell vs. Kostenlos}
-\subsubsection{Hosted vs. On-Premise}
-\subsection{Mögliche Verbesserungen}
-Gated Checkin and Pull-trigger
+	Unter Zuhilfenahme von CI wird der Prozess der Softwareentwicklung weiter voran getrieben als in einem klassischen Setup. Es wird mit jeder Codeänderung getestet und auch die Komponenten untereinander integriert. Das verkürzt den Restprozess bis zum Release und steigert auch das Vertrauen in den aktuellen Stand, da dieser regelmäßig und mehrfach getestet ist. Wenn aus dem Markt nun ein besonders schwerwiegender Fehler gemeldet wird, kann man kurzfristig einen (Patch-)Release ansetzen und durchführen.
+	\item \textbf{Vorsichtigere Entwickler, wenn sie wissen dass eine Kontrollinstanz existiert}\\
+	Auch die Einstellung der Entwickler ändert sich. Alleine durch das Wissen, dass es eine zentrale Kontrollinstanz gibt, gehen sie bewusster und vorsichtiger mit Codeänderungen um. Jeder im System kann sehen, aufgrund welches Check-Ins der Build auf einmal nicht mehr funktioniert. Schon allein weil man vor den Kollegen nicht als schlechter Entwickler identifiziert werden möchte, achtet man mehr auf seine Check-Ins, baut und testet lokal. Aufgrund dieses vorsichtigeren Ansatzes werden auch die Checkins vom Umfang her kleiner. Das System ist automatisiert und es macht von dieser Seite keinen Unterschied ob man viel oder wenig ändert. Kleine Änderugnen lassen sich jedoch leichter korrigieren bei einem Fehler und auch leichter kontrollieren im Handling. Das führt insgesamt zu einer besseren Entwicklungskultur im Unternehmen und zu besserer Performance der Mitarbeiter.
+\end{enumerate}
+	
+\section{Mögliche Verbesserungen}
+Das Konzept CI wurde bereits 2006 von Martin Fowler vorgestellt. Seitdem gab es bereits mehrere Ansätze der Weiterentwicklung. Ich möchte hierbei einige vorstellen, sowohl auf Seiten des Prozesses als auch, solche die durch neue Funktionen von Tools ermöglicht wurden:
+\begin{itemize}
+	\item \textbf{Erweiterung des Prozesses}\\
+ Aufgrund der immer kürzeren Entwicklungszyklen wird es in manchen Bereichen, wie z.B. Appentwicklung für mobile Geräte, unasuweichlich möglichst viel der Arbeit zu automatisieren. Deshalb wurde bereits die Erweiterung des Konzepts zu "`Continuous Delivery"' bzw. "`Continuous Deployment"' entwickelt. Hierfür gibt es auch Toolunterstützung von z.B. Jenkins.
+	\item \textbf{Verbesserung des vorhandenen Prozesses}\\
+Eine weitere mögliche Verbesserung setzt viel früher im Prozess an. In dem hier vorgestellten klassischen CI Prozess, fügt ein Entwickler seine Änderungen in das SCM System ein und anschließend wird die Qualität durch einen automatisierten Build ermittelt. Das kann aber gerade im Fall eines mangelhaften CheckIns zu Problemen führen, da andere Entwickler diesen korrupten Stand aus dem SCM holen und eventuell in ihre Änderungen einbauen.\\
+Deshalb gibt es bereits vorhandene Konzepte die Änderungen zu prüfen, bevor diese in das SCM gelangen. Je nach verwendetem Tooling heißen diese "`Gated-Checkin"' (TFS\footnote{Microsoft Team Foundation Server, kommerzielles Tool zur Unterstützung von CI}) oder "`Pre-tested Commits"' (Jenkins).
+
+\end{itemize} 

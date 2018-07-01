@@ -1,17 +1,23 @@
-\BOOKMARK [1][-]{section.1}{Einleitung}{}% 1
-\BOOKMARK [1][-]{section.2}{Continuous\040Integration}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Begriffsklärung}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Ablauf\040von\040Continuous\040Integration}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Gründe Continuous Integration einzusetzen}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Marktübersicht an Tools}{section.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.4.1}{Kommerziell\040vs.\040Kostenlos}{subsection.2.4}% 7
-\BOOKMARK [3][-]{subsubsection.2.4.2}{Hosted\040vs.\040On-Premise}{subsection.2.4}% 8
-\BOOKMARK [2][-]{subsection.2.5}{Mögliche Verbesserungen}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Jenkins}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Funktionsumfang}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Erweiterungsmöglichkeiten}{section.3}% 12
-\BOOKMARK [1][-]{section.4}{Anwendungsbeispiele}{}% 13
-\BOOKMARK [2][-]{subsection.4.1}{Verteilte\040Teams\040in\040unterschiedlichen\040Zeitzonen}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.2}{Regulatorisch\040relevante\040Software\040und\040Nachvollziehbarkeit}{section.4}% 15
-\BOOKMARK [1][-]{subsection.4.2}{Literatur}{}% 16
-\BOOKMARK [1][-]{section*.7}{Abkürzungsverzeichnis}{}% 17
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Continuous\040Integration}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Begriffsklärung}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Abgrenzung\040zu\040anderen\040Begriffen}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{Ablauf\040von\040Continuous\040Integration}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Gründe Continuous Integration einzusetzen}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.4}{Mögliche Verbesserungen}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{Tools zur Unterstützung von CI}{}% 8
+\BOOKMARK [1][-]{section.3.1}{Kommerziell\040vs.\040Kostenlos}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.2}{Hosted\040vs.\040On-Premise}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.3}{Bekannte\040Vertreter}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.3.1}{Jenkins}{section.3.3}% 12
+\BOOKMARK [2][-]{subsection.3.3.2}{TeamCity}{section.3.3}% 13
+\BOOKMARK [2][-]{subsection.3.3.3}{TFS}{section.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.4}{Travis-CI}{section.3.3}% 15
+\BOOKMARK [0][-]{chapter.4}{Jenkins}{}% 16
+\BOOKMARK [1][-]{section.4.1}{Funktionsumfang}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Erweiterungsmöglichkeiten}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Anwendungsbeispiele}{}% 19
+\BOOKMARK [1][-]{section.5.1}{Verteilte\040Teams\040in\040unterschiedlichen\040Zeitzonen}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.2}{Regulatorisch\040relevante\040Software\040und\040Nachvollziehbarkeit}{chapter.5}% 21
+\BOOKMARK [0][-]{section.5.2}{Literatur}{}% 22
+\BOOKMARK [0][-]{chapter*.14}{Abkürzungsverzeichnis}{}% 23
