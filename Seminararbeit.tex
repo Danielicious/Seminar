@@ -1,0 +1,352 @@
+
+\documentclass[german,11pt,a4paper]{article} % a. Set paper size to Letter, 8½ x 11. 
+%\usepackage[letterpaper,margin=1in]{geometry} % e. Set margins of 1 inch (2.54 cm.) on all four sides of the paper. 
+\usepackage[letterpaper,left=3cm,right=3cm, top=3.0cm, bottom=3.0cm, footnotesep=1.0cm]{geometry} 
+\usepackage{mathptmx} % d. ...in a simple roman face except where indicated below (§3). 
+\usepackage[onehalfspacing]{setspace} % b. Set line spacing to 1.5 throughout the document.  
+\usepackage{fancyhdr} 
+\usepackage{relsize}
+\usepackage{csquotes}
+
+\usepackage[bottom]{footmisc}
+\usepackage{tabularx}
+    
+\pagestyle{empty}        % No page numbers
+
+%%%Using XeTeX (xelatex, lulatex):
+\usepackage{polyglossia}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{url}
+\usepackage{hyperref}
+%\usepackage[ngerman]{babel}
+%\usepackage{german}
+\setdefaultlanguage[spelling=new, babelshorthands=true]{german}
+
+\setmainfont[Mapping=tex-text]{Linux Libertine} %Falls nicht vorhanden müssen die LinLibertine-ttf-Dateien nach C:\windows\fonts verschoben werden
+
+
+
+\usepackage{booktabs}    % For nice-looking tables
+%\usepackage{natbib}      % Citation support (required for crossrefs)
+
+%\usepackage{expex}
+%\bibpunct[:]{(}{)}{;}{a}{}{,} % Defaults for in-text citations
+%\usepackage{bibentry}    % Print individual references
+
+
+\usepackage[style=alphabetic,backend=biber,sorting=ynt,maxnames=99,sortlocale=de-DE]{biblatex}
+\addbibresource{Literatur.bib}
+
+\usepackage{acronym}
+\usepackage{multicol}
+\newcommand*\elide{\textup{[\,\dots]}\xspace}
+
+\begin{document}
+
+\begin{center}\uppercase{Fernuniversität Hagen}\end{center}
+\begin{center}\uppercase{Institut für }\end{center}
+
+\vspace{3cm}
+
+%%%Block Hausarbeit:
+%\begin{center}
+%\begin{large}
+%Titel des Seminars\\
+%Name des Seminarleiters/der Seminarleiterin
+%\end{large}
+%\end{center}
+%%%Ende Block Hausarbeit
+
+\title{Continuous Integration und Jenkins}
+\date{\vspace{-5ex}}
+{\let\newpage\relax\maketitle}
+\thispagestyle{empty}
+
+
+%%%Block Masterarbeit:
+\begin{center}
+\begin{large}
+\begin{Large}
+Seminararbeit\\
+\end{Large}
+im Studiengang 'Bachelor Informatik' \\
+\end{large}
+\end{center}
+\begin{center}
+vorgelegt von\\
+\begin{large}
+Daniel Wolfschmidt\\
+\end{large}
+\end{center}
+\vspace{1cm}
+\begin{center}
+\begin{large}
+Betreuer: Daniela Keller\\
+\end{large}
+\end{center}
+%%%Ende Block Masterarbeit
+
+\begin{center}
+\begin{large}
+Ablieferungstermin: \date{\today} \\
+\end{large}
+\end{center}
+
+\vspace{1,5cm}
+
+\begin{center}
+\begin{large}
+\author{Daniel Wolfschmidt}\\
+\end{large}
+Fließbachstraße 18\\ 
+91052 Erlangen\\ 
+\url{mailto:DanielWolfschmidt@gmx.de}\\
+Matrikelnr.: 9601244  \\
+\end{center}
+
+
+
+\newpage
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} %obere Trennlinie
+
+\include{./chapter/Einleitung} 
+%\section{Einleitung}
+%In den Jahrzehnten der Historie von Softwarentwicklung gab es immer wieder neue Erkenntnisse und neue State-of-the-Art Methoden der Entwicklung von Software. So gab es lange Zeit große, monolithische Desktopapplikationen, welche nur als großes Ganzes funktionierten. Mittlerweile geht der Trend hin zu Microservices\footnote{Dabei handelt es sich um eine Zusammenstellung unabhängiger Prozesse, die durch eine sehr leichtgewichtige Kommunikationsschicht verbunden sind. Ein Beispiel zur Kommunikation ist HTTP(S). vgl. \url{https://martinfowler.com/microservices/}}. Diese, bis auf die Schnittstellenbeschreibung, unabhängige Entwicklung der einzelenen Komponenten von Software, erlaubt eine wesentlich schnellere Entwicklung von Software.\\
+%Auch die Einstellung der Nutzer hat sich verändert. Durch das schnelle Entwickeln von Patches und Updates, ist der Anwender zum Betatester von Software avanciert. Er ist es nicht nur gewohnt, dass in schneller Abfolge neue Änderungen an der Software veröffentlicht werden, sondern er erwartet es regelrecht.\\
+%Ein weiterer Aspekt sind die neuen Vorgehensmodelle im (Software-)Projektmanagement. In der Vergangenheit war es gang und gäbe, das Wasserfall Modell zu verwenden. Dabei wird der Test in einer späten Projektphase durchgeführt, und die Entwicklungsphase dauert sehr lange, bis das Gesamtprodukt fertig entwicklet ist. Heutzutage bedient man sich agiler Modelle wie z.B. Scrum. Hierbei wird in  regelmäßigen Abständen eine überschaubare Verbesserung des Produkts veröffentlicht. Dies unterstützt die oben beschriebene Veränderung in modernen Software Architekturen.\\
+%In diesen Zeiten immer kürzerer Entwicklungszyklen gewinnt die Entwicklung von Konzepten zur Sicherung der Code Qualität zunehmend an Bedeutung. Eines dieser Konzepte, das ich in der hier vorliegenden Seminararbeit näher beleuchten möchte, ist \textbf{Continuous Integration}.\\
+%Software soll schnell entwickelt und getestet werden. Dies ist nur durch eine weitreichende Automatisierung von Build-, Integrations- und Testschritten möglich. Mehrere kommerzielle und kostenlose Tools zur Unterstützung von Continuous Integration existieren am Markt, wobei diese Arbeit \textbf{Jenkins} genauer vorstellt.
+
+
+%automatisierte, toolunterstützte Integration von Softwarekomponenten zunehmend an Bedeutung. 
+
+%Dieses Dokument dient als Vorlage für Haus- bzw. Masterarbeiten\footnote{Die entsprechend kommentierten Blöcke im Bereich der Titelseite sowie die abschließenden Seiten (Lebenslauf und Erklärung) sind bei einer Hausarbeit in der \texttt{tex-Datei} zu entfernen.} des Studiengangs 'Cultural and Cognitive Linguistics' (LMU München). Es basiert auf einem LaTeX\footnote{LaTeX kann hier heruntergeladen werden: \url{https://www.latex-project.org/}; nach der Installation kann die \texttt{tex-Datei} mit einem LaTeX-Editor, z. B. TeXShop (Mac, bereits mitinstalliert) oder Texmaker (Windows, muss zusätzlich installiert werden) geöffnet werden. Das Kompilieren (Erstellen des Pdfs) erfolgt mit XeLaTeX.}-Template, das auf der ATS-Homepage erhältlich ist (= \verb+tex-Datei+ sowie weitere Templates für die Bibliographie); das Template verwendet u. a. das \emph{ExPex}-Paket zur linguistischen Glossierung.
+
+%Die Vorlage orientiert sich an den Richtlinien der Zeitschrift \emph{Language} (\url{http://www.linguisticsociety.org/sites/default/files/style-sheet.pdf}); dazu wird eine leicht modifizierte \verb+bst-Datei+ (\url{http://ron.artstein.org/software.html}) verwendet (s. Kapitel \ref{sec:cit}), die Bibliographie wird mit Hilfe von BibTeX generiert (s. \verb+bib-Datei+); der verwendete Font \verb+Linux Libertine+ ist Teil des Template-Pakets (die \verb+ttf-Dateien+ müssen in den \verb+font-Ordner+ des Systems kopiert werden).
+
+\include{./chapter/Continuous-Integration}
+
+%\section{Continuous Integration}
+%Dieses Kapitel beschäftigt sich mit einem der beiden Hauptthemen, nämlich Continuous Integration. Dabei möchte ich mich diesem Thema zunächst durch eine genaue Begriffsbestimmung nähern, wobei auch eine Abgrenzung zu anderen, ähnlichen Begriffen eine wichtige Rolle spielt. Im weiteren Verlauf sollen dann noch der Einsatz von Tools zur Unterstützung sowie die Gründe zum Einsatz dieser Methodik näher beleuchtet werden.\\
+%\subsection{Begriffsklärung}
+%Den Einstieg soll eine kurze Beschreibung von Martin Fowler bilden, er gilt als der gesitige Vater von Continuous Integration und wird mit diesem Artikel in vielen anderen Abhandlungen zu dem Thema zitiert:
+%\begin{center}
+%	\textit{
+%	Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible} \cite{fowler-CI}
+%\end{center}
+%Es geht hier also um das kollaborative Arbeiten in einem Team, insbesondere das Integrieren von Code in eine gemeinsame Code-Basis. Das heißt ferner, dass es eine Methodik ist die für einen einzelnen Entwickler kaum Bedeutung hat. Das ist auch einleuchtend, denn seinen eigenen Code in eben diesen zu integrieren, macht kaum Sinn. \\
+%Ferner sollte dies sehr oft passieren, am besten mehrmals täglich. Auch das ist eine sehr sinnvolle Daumenregel. Wenn man zu lange seinen Code nicht in die gemeinsame Code-Basis integriert, so besteht die Gefahr, dass man zu weit weg ist davon und dadurch immense Aufwände entstehen. Dann wird aus dem Integrieren einer eigentlich keinen Änderung eine umfassende Merge\footnote{Mergen bezeichnet das Vergleichen mehrerer Änderungen an einer Quelldatei und das Zusammenführen ("`mergen"') dieser Änderungen. vgl.:\url{https://de.wikipedia.org/wiki/Merge}}-Session.\\
+%Der dritte Teil der vorliegenden Beschreibung geht darauf ein, wie man den Nachweis erbringen kann, dass die Integration erfolgreich war. Dafür soll es automatisierte (und dadurch auch standardisierte) Builds geben. Diese Builds erzeugen zunächst aus dem menschenlesbaren Code den von Maschinen ausführbaren Code sowie dazu gehörige Tests in verschiedenem Detailgrad. Martin Fowler gibt in seienr Beschreibung auch an, dass die Tests mit zu diesem automatisierten Builds gehören. Hierbei muss man auf eine sinnvolle Testtiefe achten. Wenn man die Test-Pyramide\footnote{Dabei handelt es sich um eine Darstellung der unterschiedlichen Testtypen in hierarchischer Form, wobei von unten nach oben die Geschwindigkeit abnimmt und die Kosten zunehmen. vgl.:\url{https://martinfowler.com/bliki/TestPyramid.html}} zu Rate zieht, muss man darauf achten, dass alle Tests fertig sind bevor der näcshte Entwickler sein Änderungen in die Code-Basis integriert. Deshalb ist es eventuell am Besten, wenn man während des initialen Builds nur Unittests ausführt, und ein möglicherweise nur einmal am Tag laufender Build dann detailiierter testet.\\
+%Um diese Beschreibung der Kernpunkte von Continuous Integration auf eine breitere Basis zu stellen, möchte ich noch eine zweite Quelle nutzen, um von einem anderen Blickwinkel auf das Thema zu blicken.
+%\begin{center}
+%	\textit{
+%The practice of continuous integration represents a fundamental shift\\ in the process of building software. It takes integration, commonly\\
+%an infrequent and painful exercise, and makes it a simple, core part\\ of a developer’s daily activities. Integrating continuously makes\\ integration a part of the natural rhythm of coding, an integral part\\ of the test-code-refactor cycle. Continuous integration is about\\ progressing steadily forward by taking small steps.}\\ \cite{10.1007/978-3-540-24853-8_8}
+%\end{center}
+%Der Autor dieses Konferenzbeitrags ist R. Owen Rogers. Er arbeitet bei Thoughtworks, derselben Firma bei der auch Martin Fowler arbeitet. Er stammt von einer Konferenz aus dem Jahr 2004, also zeitlich zwischen der initialen Version über CI\footnote{Ab hier werde ich CI als Abkürzung für "`Continuous Integration"' verwenden. Diese Abkürzung ist auch im Abkürzungsverzeichnis zu finden.} seiner aktuellen Version aus dem Jahr 2006.\\
+%Es wird dabei eher der Fokus auf die Auswirkungen von Continuous Integration auf die Softwareentwicklung und der Einfluss auf die Qualität von Software gelegt. Er geht dabei vor allem darauf ein, dass das häufige Integrieren der zentrale Teile dieses Konzepts ist. Das deckt sich mit der oben vorgestellten Sichtweise von Martin Fowler. Desweiteren setz er den Ansatz in den Kontext von "`test-code-refactor"', und geht damit auch auf einen anderen bereits vorgestellten Aspekt ein, nämlich das Überprüfen des Erfolgs der Integration. Der Anteil, dass es eine Praktik ist, die hauptsächlich in Teams sinn macht, ist eher implizit enthalten in diesem Text und wird nicht extra erwähnt.\\
+%Er deckt sich damit mit der Sichtweise von Martin Fowler, und beleuchtet das Thema einfach nur aus einem anderen, eher anwendungsbezogenen Blickwinkel. Das ist auch nachvollziehbar, da es sich hier nicht um eine theoretische Abhandlung handelt sondern einen Konferenzbeitrag, der an Anwender dieser Technik gerichtet war.\\
+
+%Zusammenfassend bleibt zu sagen dass mit Continuous Integration die Zusammenarbeit eines Entwicklerteams an einer gemeinsamen Code-Basis verbessert werden soll. Dies soll geschehen durch kontinuierliches Zusammenführen der Änderungen aller Beteiligten und das automatisierte Prüfen des Ergebnisses.
+%\subsubsection*{Abgrenzung zu anderen Begriffen}
+%Es gibt einige Begriffe die Continuous Integration sehr ähnlich sind. Dieser Abschnitt soll genauer umreißen, wo der Unterschied ist und was sie vielleicht gemeinsam haben.
+%\begin{itemize}
+%	\item\textbf{Continuous Delivery}\\
+%	Auch hier hat Martin Fowler eine zusammenfassende Definition geliefert:
+%\begin{center}
+%	\textit{
+%	You achieve continuous delivery by continuously integrating the \\software done by the development team, building executables, and\\ running automated tests on those executables to detect problems. \\Furthermore you push the executables into increasingly production-like \\environments to ensure the software will work in production. To do \\this you use a DeploymentPipeline.}\\ \cite{fowler-CD}
+%\end{center}
+%	Bei Continuous Delivery wird der Gedanke von Continuous Integration aufgegriffen, und weiterentwickelt. Während Continuous %Integration sich komplett in der Entwicklung bewegt, umfasst Continuous Delivery auch Schritte bis hin zum Kunden. Es werden weitere Schritte wie das Paketieren als Deliverable (z.B. Erstellen eines Setups) und das Deployment (z.B. Bereitstellen als Download oder Einstellen in einen AppStore) betrachtet. Das Ziel dessen ist, dass das Ergebnis der Entwicklung zu jedem Zeitpunkt zum Kunden geschickt werden könnte.\\
+	
+	
+%\end{itemize}
+%\subsection{Ablauf von Continuous Integration}
+%Da in der Beschreibung von CI die Rede ist vom Integrieren von Code Änderungen, muss es auch irgendwie eine gemeinsame Basis geben, in die diese Änderungen einfließen. Eine solche gemeinsame Basis ist ein sogenanntes Source-Control-Management-System (SCM\footnote{Ab hier werde ich SCM als Abkürzung für "`Source Control Management"' verwenden. Diese Abkürzung ist auch im Abkürzungsverzeichnis zu finden.}). Dabei handelt es sich um ein System, in dem Änderungen an einer Datei nachvollziehbar gemacht werden, und man verschiedene Stände dieser Datei abrufen kann. Es gibt dazu verschiedene Konzepte, entweder eine zentrale Stelle an der alle Dateien inklusive Historie verwaltet werden, oder verteilte Systeme, bei der es keine ausgezeichnete zentrale Instanz gibt.
+%\subsubsection{Beteiligte Entitäten und schematischer Ablauf}
+%Ein exemplarischer Ablauf inklusive beteiligter Komponenten ist in Abbildung XY zu sehen.
+%\subsection{Gründe Continuous Integration einzusetzen}
+%\subsection{Marktübersicht an Tools}
+%\subsubsection{Kommerziell vs. Kostenlos}
+%\subsubsection{Hosted vs. On-Premise}
+\include{./chapter/Jenkins}
+\include{./chapter/Anwendung}
+
+
+%\section{Inhaltliche Hinweise}
+%Eine Hausarbeit hält wissenschaftliche Erkenntnisse über einen Gegenstand fest, die man in Auseinandersetzung mit der Fachliteratur gewonnen hat, und teilt diese Erkenntnisse in einer nachvollziehbaren Reihe folge mit. Um der Nachvollziehbarkeit willen sollte die Hausarbeit etwa die Form haben \emph{'Themenbereich – Wissensstand darüber – Feststellung der Problemlage  – Fragestellung –
+%Materialauswahl  und  Methodik – Verfolgung  der  Fragestellung  /  Untersuchung  des  Gegenstands – Ergebnis'}. Der Themenbereich  muss  dem  geplanten  Umfang  entsprechend überschaubar sein. (\url{http://www.ats.uni-muenchen.de/studium_lehre/merkblatt-praesentationsformen.pdf})
+
+
+%\section{Hinweise zur Form}
+%\subsection{Formatierung} 
+
+%Diese LaTeX-Vorlage benutzt folgende Formatierung (vgl. \url{http://www.indogermanistik.uni-muenchen.de/downloads/diverses/hausarbeit.pdf}):
+%\begin{itemize}
+%\setlength{\itemsep}{0pt}
+	%\item Schriftart: Linux Libertine O (alternativ: Times New Roman)
+	%\item Schriftgröße: 12 pt
+	%\item linker und rechter Rand: 3.5 cm, oberer und unterer Rand: 3 cm
+	%\item Zeilenabstand: eineinhalbfach (alternativ: 15 pt Zeilenabstand bei 12 pt Schriftgröße)
+%\end{itemize}
+
+%\noindent
+%Bei Umsetzung der Vorgaben in Word sollten unbedingt Formatvorlagen definiert werden.
+
+%\subsection{Zitierung} 
+%\label{sec:cit}
+
+%Die Zitierweise folgt dem Autor-Jahr-System. Der Stellenverweis erfolgt im Text, Fußnoten sollten nur für Erläuterungen und Kommentare verwendet werden. Folgende Hinweise sind der \emph{Language}-Bibliographie-Vorlage von \url{ron.artstein.org} entnommen:\newline
+
+%\noindent
+%The \emph{Language} style sheet makes a distinction between two kinds of in-text citations: citing a work and citing an author.
+%\begin{itemize}
+%\item Citing a work:
+%  \begin{itemize}
+%    \setlength{\itemsep}{0pt}
+%    \setlength{\parsep}{0pt}
+%  \item Two authors are joined by an ampersand (\&).
+%  \item More than two authors are abbreviated with \emph{et al.}
+%  \item No parentheses are placed around the year (though parentheses
+%    may contain the whole citation). 
+%  \end{itemize}
+%\item Citing an author:
+%  \begin{itemize}
+%    \setlength{\itemsep}{0pt}
+%    \setlength{\parsep}{0pt}
+%  \item Two authors are joined by \emph{and}.
+%  \item More than two authors are abbreviated with \emph{and colleagues}.
+%  \item The year is surrounded by parentheses (with page numbers, if
+%    present).
+%  \end{itemize} 
+%\end{itemize}
+%To provide for both kinds of citations, \verb+language.bst+ capitalizes on the fact that \verb+natbib+ citation commands come in
+%two flavors. In a typical style compatible with \verb+natbib+, ordinary commands such as \verb+\citet+ and \verb+\citep+ produce short
+%citations abbreviated with \emph{et al.}, whereas starred commands such as \verb+\citet*+ and \verb+\citep*+ produce a citation with a
+%full author list. Since \emph{Language} does not require citations with full authors, the style \verb+language.bst+ repurposes the starred commands to be used for citing the author. The following table shows how the \verb+natbib+ citation commands work with \verb+language.bst+.
+%\begin{center}
+%  \begin{tabular}{lll}
+%    \toprule
+%    Command & Two authors & More than two authors \\
+%    \midrule
+%    \verb+\citet+ & \citet{hale} & \citet{sprouse} \\
+%    \verb+\citet*+ & \citet*{hale} & \citet*{sprouse} \\
+%    \addlinespace
+%    \verb+\citep+ & \citep{hale} & \citep{sprouse} \\
+%    \verb+\citep*+ & \citep*{hale} & \citep*{sprouse} \\
+%    \addlinespace
+%    \verb+\citealt+ & \citealt{hale} & \citealt{sprouse} \\
+%    \verb+\citealt*+ & \citealt*{hale} & \citealt*{sprouse} \\
+%    \addlinespace
+%    \verb+\citealp+ & \citealp{hale} & \citealp{sprouse} \\
+%    \verb+\citealp*+ & \citealp*{hale} & \citealp*{sprouse} \\
+%    \addlinespace
+%    \verb+\citeauthor+ & \citeauthor{hale} & \citeauthor{sprouse} \\
+%    \verb+\citeauthor*+ & \citeauthor*{hale} & \citeauthor*{sprouse} \\
+%    \verb+\citefullauthor+ & \citefullauthor{hale} & \citefullauthor{sprouse} \\
+%    \bottomrule
+%  \end{tabular}
+%\end{center}
+%Authors of \emph{Language} articles would typically use \verb+\citet*+, \verb+\citep+, \verb+\citealt+ and \verb+\citeauthor*+, though they
+%could use any of the above commands. There is no command for giving a full list of authors.
+
+%\subsection{Hinweis Literaturverzeichnis}
+%Das Literaturverzeichnis dieser Vorlage beinhaltet als Beispielbibliographie die Literaturangaben des \emph{Language} Stylesheets. 
+
+
+%\subsection{Glossierung}
+
+%Standard für die Erstellung von Interlinearversionen sind die \emph{Leipzig Glossing rules} (\url{https://www.eva.mpg.de/lingua/pdf/Glossing-Rules.pdf}). Die Sprachbeispiele werden durchlaufend nummeriert und sind mit einer Quellenangabe zu versehen, s. Beispiel (\nextx).\footnote{Weitere Optionen zur linguistischen Glossierung mit \emph{ExPex} sind der Dokumentation des Pakets zu entnehmen (\url{http://ftp.uni-erlangen.de/ctan/macros/plain/contrib/expex/expex-doc.pdf}).}
+
+%\ex<ex-lezgian>
+%\begingl
+%\glpreamble  Lesgisch \citep[207]{haspelmath1993grammar} //
+%\gla Gila abur-u-n ferma hamišaluǧ güǧüna amuq’-da-č. //
+%\glb now they-{\sc obl}-{\sc gen} farm forever behind stay-{\sc fut}-{\sc neg} //
+%\glft 'Now their farm will not stay behind forever.' //
+%\endgl
+%\xe
+
+%Reffering to example by name: (\getref{ex-lezgian}).
+
+%Sprachbeispiele im Text werden kursiv formatiert, ihre Übersetzung mit einfachen Anführungszeichen, z. B. \emph{ferma} 'farm'.
+
+
+
+\pagebreak
+
+\addcontentsline{toc}{section}{Literatur}
+\pagestyle{fancy}
+
+%%\bibliographystyle{language-dt} %using language.bst
+%%\bibliography{Seminararbeit} %bib-filename
+
+\defbibheading{head}{\section*{Literatur}}
+\printbibheading[heading=head]
+\printbibliography[type=book, heading=subbibliography, title={Bücher}]
+\printbibliography[type=report, heading=subbibliography, title={Forschungsberichte (Research Papers)}]
+\printbibliography[type=inproceedings, heading=subbibliography,  title={Konferenzbeiträge}]
+\printbibliography[type=misc, heading=subbibliography,  title={Internet}]
+
+%\nocite{*} %List all bib-entries
+
+\clearpage
+\section*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+\begin{multicols}{2}
+\begin{acronym}[abr]
+\acro{CI}{Continuous Integration}
+\acro{SCM}{Source Control Management}
+\end{acronym}
+\end{multicols}
+
+
+%%%Block Masterarbeit:
+%\pagebreak
+%\subsection*{Erklärung}
+%\label{erklaerung}
+%\vspace*{0.5cm}
+%Hiermit versichere ich, dass ich die vorliegende Hausarbeit selbstständig und \mbox{ohne} fremde Hilfe angefertigt, alle benutzten Quellen und Hilfsmittel angegeben und \mbox{Zitate} als solche kenntlich gemacht habe.\\[0.5cm]
+%Ich versichere ferner, dass ich die Arbeit weder für eine Prüfung an einer weiteren Hochschule noch für eine staatliche Prüfung eingereicht habe. \\[1.0cm]
+%München, den \today \\[2.0cm]
+%\rule{6.0cm}{0.4pt} \\
+%%%Ende Block Masterarbeit
+
+%%%Block Masterarbeit:
+%\pagebreak
+%\subsection*{Lebenslauf}
+%\label{lebenslauf}
+%\vspace*{0.5cm}
+
+%\begin{table}[h]
+%\begin{tabularx}{\textwidth}{ l  X }
+%\textbf{Persönliche Daten:} & \\
+%  Name: & ...\\
+%  Geburtsdatum: & ... \\
+%  Geburtsort: & ...\\[1.0cm]
+%\textbf{Schulausbildung:} & \\
+%  1996 - 2000: & ...\\
+%  2000 - 2008: & ...\\[1.0cm]  
+%\textbf{Studium:} & \\
+%  WS 2008 - 2014: & ...\\[1.0cm]
+%\end{tabularx}
+%\end{table}
+
+%\noindent
+%München, den \today \\[2.0cm]
+%\rule{6.0cm}{0.4pt} \\
+%%%%Ende Block Masterarbeit
+
+\end{document}
