@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.6.10)  2 JUL 2018 21:38
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.6.10)  3 JUL 2018 00:42
 entering extended mode
 **./Seminararbeit.tex
 (Seminararbeit.tex
@@ -1121,8 +1121,9 @@ Package biblatex Info: ... file 'german.lbx' found.
 (C:\Users\Danielicious\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\german.lbx
 File: german.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 ) (Seminararbeit.aux
-(chapter/Einleitung.aux) (chapter/Continuous-Integration.aux) (chapter/Toolübersicht.aux) (chapter/Jenkins.aux)
-(chapter/Anwendung.aux))
+(chapter/Einleitung.aux)
+No file ./chapter/Continuous-Integration.aux.
+(chapter/Toolübersicht.aux) (chapter/Jenkins.aux) (chapter/Anwendung.aux))
 \openout1 = `Seminararbeit.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -1141,7 +1142,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 51.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 51.
- (C:\Users\Danielicious\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3cmr.fd
+
+(C:\Users\Danielicious\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 51.
@@ -1354,7 +1356,11 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
-[7] [8] [9] [10] [11]) [12]
+[7] [8] [9]
+
+LaTeX Warning: Reference `fig:Schema-aufbau' on page 10 undefined on input line 75.
+
+[10] [11]) [12]
 \openout2 = `./chapter/Toolübersicht.aux'.
 
  (chapter/Toolübersicht.tex
@@ -1518,10 +1524,10 @@ Package logreq Info: Writing requests to 'Seminararbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31582 strings out of 427836
- 579274 string characters out of 3153424
+ 31579 strings out of 427836
+ 579169 string characters out of 3153424
  1065636 words of memory out of 3000000
- 35241 multiletter control sequences out of 15000+200000
+ 35240 multiletter control sequences out of 15000+200000
  550640 words of font info for 95 fonts, out of 3000000 for 9000
  1330 hyphenation exceptions out of 8191
  46i,11n,79p,10463b,6513s stack positions out of 5000i,500n,10000p,200000b,50000s
