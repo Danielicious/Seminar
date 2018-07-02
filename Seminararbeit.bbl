@@ -568,6 +568,33 @@
       \verb https://www.jetbrains.com/teamcity/
       \endverb
     \endentry
+    \entry{jenkins-azure}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{labelalpha}{Mic18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Advertising Page for Jenkins VM in Azure}
+      \field{title}{Jenkins®}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azure-oss.jenkins
+      \endverb
+      \verb{url}
+      \verb https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azure-oss.jenkins
+      \endverb
+    \endentry
     \entry{Travis-build}{misc}{}
       \name{author}{1}{}{%
         {{hash=c36c156cf3bc847e954b0f3ff8493e64}{%

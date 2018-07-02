@@ -1,27 +1,28 @@
-\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Continuous\040Integration}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Begriffsklärung}{chapter.2}% 3
-\BOOKMARK [2][-]{subsection.2.1.1}{Abgrenzung\040zu\040anderen\040Begriffen}{section.2.1}% 4
-\BOOKMARK [1][-]{section.2.2}{Ablauf\040von\040Continuous\040Integration}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.3}{Gründe Continuous Integration einzusetzen}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.4}{Mögliche Verbesserungen}{chapter.2}% 7
-\BOOKMARK [0][-]{chapter.3}{Tools zur Unterstützung von CI}{}% 8
-\BOOKMARK [1][-]{section.3.1}{Kommerziell\040vs.\040Kostenlos}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.2}{Hosted\040vs.\040On-Premise}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.3}{Bekannte\040Vertreter}{chapter.3}% 11
-\BOOKMARK [2][-]{subsection.3.3.1}{Jenkins}{section.3.3}% 12
-\BOOKMARK [2][-]{subsection.3.3.2}{TeamCity}{section.3.3}% 13
-\BOOKMARK [2][-]{subsection.3.3.3}{TFS}{section.3.3}% 14
-\BOOKMARK [2][-]{subsection.3.3.4}{Travis-CI}{section.3.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Jenkins}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Geschichte}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.2}{Möglichkeiten des Betriebs}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.2.1}{Installation\040direkt\040im\040Betriebssystem}{section.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.2.2}{Vorprovisionierte\040Container}{section.4.2}% 20
-\BOOKMARK [1][-]{section.4.3}{Funktionsumfang}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.4}{Erweiterungsmöglichkeiten}{chapter.4}% 22
-\BOOKMARK [0][-]{chapter.5}{Anwendungsbeispiele}{}% 23
-\BOOKMARK [1][-]{section.5.1}{Verteilte\040Teams\040in\040unterschiedlichen\040Zeitzonen}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.2}{Regulatorisch\040relevante\040Software\040und\040Nachvollziehbarkeit}{chapter.5}% 25
-\BOOKMARK [0][-]{section.5.2}{Literatur}{}% 26
-\BOOKMARK [0][-]{chapter*.18}{Abkürzungsverzeichnis}{}% 27
+\BOOKMARK [0][-]{chapter*.3}{Einleitung}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Continuous\040Integration}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Begriffsklärung}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.1}{Abgrenzung\040zu\040anderen\040Begriffen}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Ablauf\040von\040Continuous\040Integration}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Gründe Continuous Integration einzusetzen}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{Mögliche Verbesserungen}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Tools zur Unterstützung von CI}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Kommerziell\040vs.\040Kostenlos}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Hosted\040vs.\040On-Premise}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Bekannte\040Vertreter}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Jenkins}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.2}{TeamCity}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.3}{TFS}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.4}{Travis-CI}{section.2.3}% 15
+\BOOKMARK [0][-]{chapter.3}{Jenkins}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Geschichte}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Möglichkeiten des Betriebs}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{Installation\040direkt\040im\040Betriebssystem}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{Vorprovisionierte\040Container}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.3}{Cloudbasiert\040in\040Azure}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Funktionsumfang}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Erweiterungsmöglichkeiten}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Anwendungsbeispiele}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Verteilte\040Teams\040in\040unterschiedlichen\040Zeitzonen}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Regulatorisch\040relevante\040Software\040und\040Nachvollziehbarkeit}{chapter.4}% 26
+\BOOKMARK [0][-]{section.4.2}{Literatur}{}% 27
+\BOOKMARK [0][-]{chapter*.20}{Abkürzungsverzeichnis}{}% 28

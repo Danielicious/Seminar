@@ -27,6 +27,16 @@ Für viele andere Systeme, und als Alternative für die bereits genannten direkt
 \subsection{Vorprovisionierte Container}
 Das Jenkins Projekt bietet auch vorprovisionierte Container an. In \autoref{fig:Jenkins_installation_and_setup} ist der Download des Docker Containers zu sehen. Bei einem Docker Container handelt es sich um ein eigenständiges Paket, das eine Applikation und alle dazu nötigen Ressourcen enthält. Es nutzt das darunterliegende Betriebssystem um auf Systemressourcen zuzugreifen. Man kann es in etwa mit Apps auf dem Handy vergleichen.\\
 Docker existiert bereits seit längerer Zeit für alle \*nix basierten Betriebssysteme, und seit Windows 10 Professional mit aktieiertem Hyper-V auch auf Windows verfügbar. Die Installation von Jenkins entfällt, man muss nur den Container starten und hat einen funktionierenden Jenkins Server.
+\subsection{Cloudbasiert in Azure}
+\begin{wrapfigure}{l}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{./Images/Screenshot1.png}
+  \end{center}
+  \caption{Microsoft Azure Jenkins Angebot\cite{jenkins-azure}}\label{fig:Screenshot1}
+\end{wrapfigure}
+
+Direkt im Download Bereich der Jenkins Seite wird ein Angebot von Microsoft Azure beworben. Dabei handelt es sich um eine bereits für den direkten Einsatz vorbereitete Ubuntu VM mit installiertem Jenkins und GIT. Man kann somit gegen eine monatliche Gebühr einen Jenkins Server weitestgehend sorgenfrei betreiben, da man sich nur um Jenkins selbst, nicht aber um die Infrastruktur drumherum kümmern muss. \cite{jenkins-azure}\\
+In \autoref{fig:Screenshot1} ist das von Microsoft stammende Werbebild für Jenkins in Azure zu sehen. Daraus ist auch zu entnehmen, dass das Skalieren der Build Farm in Azure keine Hürde darstellt. Sowohl Build Agenten zum Bauen, Speicherplatz für das Ergebnis als auch Container inklusive Orchestrierung zum Testen sind in Azure möglich.
 \section{Funktionsumfang}
 \section{Erweiterungsmöglichkeiten}
 In den Gründen wurde AuditTrail erwähnt, hier ein Plugin dazu: \cite{jenkins-audit-trail}
