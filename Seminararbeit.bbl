@@ -419,7 +419,7 @@
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Release Notes TFS2018, 14.07.2017}
+      \field{note}{Release Notes TFS2018}
       \field{title}{Team Foundation Server 2018: Anmerkungen zu dieser Version}
       \field{year}{2017}
       \verb{urlraw}
@@ -427,6 +427,118 @@
       \endverb
       \verb{url}
       \verb https://docs.microsoft.com/de-de/visualstudio/releasenotes/tfs2018-relnotes
+      \endverb
+    \endentry
+    \entry{jenkins-download}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2e54334c0a5ce2e3e5a5845df3ab3ada}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{fullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{bibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorbibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authornamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorfullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \field{labelalpha}{Jen18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Download Page of Jenkins}
+      \field{title}{Getting started with Jenkins}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://jenkins.io/download/
+      \endverb
+      \verb{url}
+      \verb https://jenkins.io/download/
+      \endverb
+    \endentry
+    \entry{jenkins-installing}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2e54334c0a5ce2e3e5a5845df3ab3ada}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{fullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{bibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorbibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authornamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorfullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \field{labelalpha}{Jen18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Different installation instructions for Jenkins}
+      \field{title}{Installing Jenkins}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://jenkins.io/doc/book/installing/
+      \endverb
+      \verb{url}
+      \verb https://jenkins.io/doc/book/installing/
+      \endverb
+    \endentry
+    \entry{jenkins-windows}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2e54334c0a5ce2e3e5a5845df3ab3ada}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{fullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{bibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorbibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authornamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorfullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \field{labelalpha}{Jen18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Wiki entry about Jenkins on Windows and running as a Service}
+      \field{title}{Installing Jenkins as a Windows service}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+as+a+Windows+service
+      \endverb
+      \verb{url}
+      \verb https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+as+a+Windows+service
+      \endverb
+    \endentry
+    \entry{jenkins-java}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2e54334c0a5ce2e3e5a5845df3ab3ada}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{fullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{bibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorbibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authornamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorfullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \field{labelalpha}{Jen18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Site explaining all Java related constraints of Jenkins}
+      \field{title}{Java requirements}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://jenkins.io/doc/administration/requirements/java/
+      \endverb
+      \verb{url}
+      \verb https://jenkins.io/doc/administration/requirements/java/
       \endverb
     \endentry
     \entry{TeamCity-Marketing}{misc}{}

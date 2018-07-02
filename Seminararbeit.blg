@@ -2,14 +2,14 @@
 [0] Config.pm:305> INFO - Logfile is 'Seminararbeit.blg'
 [43] biber-MSWIN64:313> INFO - === 
 [81] Biber.pm:371> INFO - Reading 'Seminararbeit.bcf'
-[208] Biber.pm:857> INFO - Found 16 citekeys in bib section 0
-[229] Biber.pm:3976> INFO - Processing section 0
-[250] Biber.pm:4136> INFO - Looking for bibtex format file 'Literatur.bib' for section 0
-[258] bibtex.pm:1500> INFO - LaTeX decoding ...
-[323] bibtex.pm:1316> INFO - Found BibTeX data source 'Literatur.bib'
-[475] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[475] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[475] Biber.pm:3804> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'de-DE'
-[475] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[502] bbl.pm:617> INFO - Writing 'Seminararbeit.bbl' with encoding 'UTF-8'
-[509] bbl.pm:720> INFO - Output to Seminararbeit.bbl
+[205] Biber.pm:857> INFO - Found 20 citekeys in bib section 0
+[226] Biber.pm:3976> INFO - Processing section 0
+[247] Biber.pm:4136> INFO - Looking for bibtex format file 'Literatur.bib' for section 0
+[256] bibtex.pm:1500> INFO - LaTeX decoding ...
+[325] bibtex.pm:1316> INFO - Found BibTeX data source 'Literatur.bib'
+[499] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[499] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[499] Biber.pm:3804> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'de-DE'
+[499] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[531] bbl.pm:617> INFO - Writing 'Seminararbeit.bbl' with encoding 'UTF-8'
+[540] bbl.pm:720> INFO - Output to Seminararbeit.bbl
