@@ -10,7 +10,8 @@ Grundsätzlich kann man zwischen kostenlosen (meist Open Source) und proprietär
 	\item \textbf{Usability}\\
 	Funktional sind kostenlose Tools meist sehr weit entwickelt. Sie sind nicht selten sogar funktional besser als kommerzielle Tools, weil die Entwicklergemeinde selbst die Funktionalität nach vorne treibt und sogar neueste Entwicklungen einfließen. Ein Manko in vielen dieser Tools ist jedoch die Usability. Nur die größten der kostenlosen Tools schaffen es aufgrund des riesigen Entwicklerhintergrunds, auch die Usability im Auge zu behalten. Ein Beispiel ist Jenkins, bei dem lange Zeit UE/UX das größte Manko war und erst seit Einführung von "`Blue Ocean"' 2016 ist auch der Usability Aspekt in diesem sehr großen Projekt präsent.
 	\item \textbf{Regulatorische Einflüsse}\\
-	Ein weiterer Aspekt, der Aufmerksamkeit bedarf sind regulatorische Rahmenbedingungen. 
+	Ein weiterer Aspekt, der Aufmerksamkeit bedarf sind regulatorische Rahmenbedingungen. Man muss definitiv im Blick behalten, welchen Einfluss diese Toolentscheidung auf ein Audit hat. Wie intensiv ist das Tool getestet? Kann bei einem kommerziellen Tool eventuell ein Teil der Validierung durch eine vom Hersteller durchgeführte Validierung argumentiert werden? Wie ist der Sicherheitsaspekt zu bewerten (Man muss zum Beispiel für die FDA nachweisen wer zu welchem Zeitpunkt auf welche Artefakte Zugriff hatte, ein Sicherheitsvorfall wäre ein Desaster dafür)?\\
+	Diese und weitere Fragen in Bezug auf regulatorische Rahmenbedingungen sind zu stellen, um eine adäquate Entscheidung treffen zu können.
 	\item \textbf{Rechtliche Bedingungen}\\
 	In der Softwareentwicklung gerade in sehr großen Unternehmen, sind die Kosten für ein System eher zu vernachlässigen. Viel gewichtiger sind rechtliche Absicherungen die man sich durch den Einsatz eines Tools eines finanzkräftigen Unternehmens einkauft. Falls ein Fehler auf einen Bug des CI Systems zurückzuführen ist, und das Unternehmen mit einem prozentualen Anteil des hohen Jahresumsatzes haften muss, so besteht prinzipiell die Chance etwas zurückzuholen. Bei einem kostenlosen Tool existiert dieser finanuzielle Hintergrund nicht. Deshalb ist eine Tendenz zu erkennen, je größer das Unternehmen ist, desto wahrscheinlicher ist der Einsatz eines kommerziellen Tools.
 	\end{itemize}
@@ -47,7 +48,7 @@ Bei Jenkins handelt es sich um ein OpenSource Produkt. Es wurde 2004 gestartet, 
   \end{tabularx}
 	\captionof{table}{Jenkins Fakten}
 \end{center}
-Ein Beispiel für das Userinterface von Jenkins ist in \autoref{fig:Jenkins-sample} zu sehen. 
+Ein Beispiel für das Userinterface von Jenkins ist in \autoref{fig:Jenkins-sample} zu sehen. Dabei ist zu beachten, dass hier bereits ein besonderes User Interface (Blue Ocean) und das Pipeline Plugin zu sehen sind. 
 \begin{figure}[H]
   \centering
   \fbox{\includegraphics[width=\textwidth]{./Images/Jenkins-sample.png}}
@@ -124,7 +125,7 @@ Travis-CI ist ein reiner On-Premise OnlineService. Er erlaubt es automatisch mit
 		\addlinespace
 		SCM Systeme & Nur GitHub\\
 		\addlinespace
-		Erweiterbar & Man kann per yaml den Build Agent so konfigurieren, dass automatisch Compiler usw. installiert werden, aber direkte Erweiterbarkeit gibt es nicht.\\
+		Erweiterbar & Man kann per YAML\footnote{YAML ist eine Auszeichnungssprache, die an XML angelehnt ist, sowie an Datenstrukturen in Perl, Python, C, vgl. \url{https://de.wikipedia.org/wiki/YAML}} den Build Agent so konfigurieren, dass automatisch Compiler usw. installiert werden, aber direkte Erweiterbarkeit gibt es nicht.\\
     \bottomrule
   \end{tabularx}
 	\captionof{table}{Travis Fakten \cite{Travis-docu}}

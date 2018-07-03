@@ -1,6 +1,6 @@
 \pagebreak
 \chapter{Continuous Integration}
-Dieses Kapitel beschäftigt sich mit einem der beiden Hauptthemen, nämlich Continuous Integration. Dabei möchte ich mich diesem Thema zunächst durch eine genaue Begriffsbestimmung nähern, wobei auch eine Abgrenzung zu anderen, ähnlichen Begriffen eine wichtige Rolle spielt. Im weiteren Verlauf sollen dann noch der Einsatz von Tools zur Unterstützung sowie die Gründe zum Einsatz dieser Methodik näher beleuchtet werden.\\
+Dieses Kapitel beschäftigt sich mit einem der beiden Hauptthemen, nämlich Continuous Integration. Dabei möchte ich mich diesem Thema zunächst durch eine genaue Begriffsbestimmung nähern, wobei auch eine Abgrenzung zu anderen, ähnlichen Begriffen eine wichtige Rolle spielt. Im weiteren Verlauf sollen dann noch der grundsätzliche Ablauf sowie die Gründe zum Einsatz dieser Methodik näher beleuchtet werden.\\
 \section{Begriffsklärung}
 Den Einstieg soll eine kurze Beschreibung von Martin Fowler bilden, er gilt als der gesitige Vater von Continuous Integration und wird mit diesem Artikel in vielen anderen Abhandlungen zu dem Thema zitiert:
 \begin{center}
@@ -81,7 +81,7 @@ Da in der Beschreibung von CI die Rede ist vom Integrieren von Code Änderungen,
 %Ein Entwickler nimmt sich nun den aktuellen Stand aus diesem SCM, und führt seine Arbeit aus. Dabei wird bei CI besonders Wert auf Tests gelegt. Dies ist mittlerweile zum Quasistandard in der Sotwareentwicklung geworden, und folgt vom schematischen Aufbau her der Testpyramide, wie sie in (\cite{fowler-Testpyramid}) beschrieben wird.\\
 %Die erste Kontrollinstanz ist nun der automatisierte Build auf der Entwicklermaschine. Darunter versteht man das Kompilieren und Linken der Quellen sowie das Ausführen der zuvor geschriebenen automatisierten Tests. Hierbei beschränkt man sich zumeist auf UnitTests.\\
 %Wenn dieser Schritt zufriedenstellend abgeschlossen ist, können die Änderungen zurück in das SCM geführt werden. Dazu holt der Entwickler sich abermals den aktuellen Stand, und löst potentielle Konflikte auf, die entstanden sind, weil andere Entwickler in der Zwischenzeit ihren Stand eingefügt haben. Lokal hat er nun bereits den neuen Stand, den er nun noch einmal lokal baut und testet. Ist dieser lokale Build erfolgreich, fügt er seine Änderungen dem SCM hinzu. An diesem Punkt startet der automatische Prozess der Buildumgebung. Sobald die Änderungen im Source Control sind, wird ein Build getriggert. Der Einfachheit halber habe ich dabei in Abbildung~\ref{fig:Schema-aufbau} nur einen einzigen Build Server eingefügt. Prinzipiell gibt es eine Orchestrierungs-Instanz und mehrere Build Server. Diese zentrale Instanz koordiniert dabei die Aufgaben und die Server führen diese aus.
-\section{Gründe Continuous Integration einzusetzen}
+\section{Gründe Continuous Integration einzusetzen}\label{sec:Gründe Continuous Integration einzusetzen}
 Die Gründe für den Einsatz von Continuous Integration sind sehr vielfältig. Ich möchte im Folgenden eine kleine Auswahl für Gründe geben:
 \begin{enumerate}
 	\item \textbf{Qualität steigern}\\

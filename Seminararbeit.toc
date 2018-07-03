@@ -22,7 +22,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Hosted vs. On-Premise}{14}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Bekannte Vertreter}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Bekannte Vertreter}{15}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Jenkins}{15}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
@@ -32,28 +32,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Travis-CI}{18}{subsection.2.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Jenkins}{19}{chapter.3}
+\contentsline {chapter}{\numberline {3}Jenkins}{20}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Geschichte}{19}{section.3.1}
+\contentsline {section}{\numberline {3.1}Geschichte}{20}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Möglichkeiten des Betriebs}{19}{section.3.2}
+\contentsline {section}{\numberline {3.2}Möglichkeiten des Betriebs}{20}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Installation direkt im Betriebssystem}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Installation direkt im Betriebssystem}{21}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Vorprovisionierte Container}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Vorprovisionierte Container}{21}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Cloudbasiert in Azure}{21}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Cloudbasiert in Azure}{22}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Funktionsumfang}{21}{section.3.3}
+\contentsline {section}{\numberline {3.3}Funktionsumfang}{22}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Erweiterungsmöglichkeiten}{21}{section.3.4}
+\contentsline {section}{\numberline {3.4}Erweiterungsmöglichkeiten}{22}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Anwendungsbeispiele}{22}{chapter.4}
+\contentsline {chapter}{\numberline {4}Anwendungsbeispiele}{24}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Verteilte Teams in unterschiedlichen Zeitzonen}{22}{section.4.1}
+\contentsline {section}{\numberline {4.1}Kleines Open Source Projekt mit GitHub als SCM}{24}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Regulatorisch relevante Software und Nachvollziehbarkeit}{22}{section.4.2}
+\contentsline {section}{\numberline {4.2}Mittelständisches Unternehmen aus dem Java Umfeld}{25}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatur}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Großes Unternehmen mit Teams in unterschiedlichen Zeitzonen}{26}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abkürzungsverzeichnis}{25}{chapter*.20}
+\contentsline {chapter}{Literatur}{27}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abkürzungsverzeichnis}{29}{chapter*.24}
