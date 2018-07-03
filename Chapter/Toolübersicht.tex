@@ -3,23 +3,23 @@
 \chapter{Tools zur Unterstützung von CI}
 Es gibt eine sehr große Menge an angebotenen Tools am Markt, um CI zu unterstützen. In diesem Kapitel möchte ich vor allem ein paar dieser Tools kurz vorstellen und anhand einiger Merkmale kategorisieren.
 \section{Kommerziell vs. Kostenlos}
-Grundsätzlich kann man zwischen kostenlosen (meist Open Source) und proprietären, kommerziellen Tools unterscheiden. Es gibt sowohl Gründe für die eine wie auch die andere Art. Ich möchte hier einige Aspekte aufführen, welche eine Toolentscheidung in die eine oder andere Richtung lenken:
+Grundsätzlich kann man zwischen kostenlosen (meist Open Source) und proprietären, kommerziellen Tools unterscheiden. Es gibt sowohl Gründe für die eine wie auch die andere Art. Ich möchte hier einige Aspekte aufführen, welche eine Tool Entscheidung in die eine oder andere Richtung lenken:
 \begin{itemize}
 	\item \textbf{Technologie}\\
 	Zunächst ist zu erwähnen, dass bestimmte Rahmenbedingungen für Unternehmen beziehungsweise Projekte vorgegeben sind. Als Beispiele möchte ich hier bestimmte zu verwendende Technologien erwähnen. Es kann unumgänglich sein ein bestimmtes kommerzielles Produkt zu verwenden, weil nur für diese Technologie zertifizierte Tools erlaubt sind, was meist mit hohem finanziellem Aufwand verbunden ist. Kostenlose Projekte können dies nicht für jede Version leisten und lassen sich deshalb nicht zertifizieren.
 	\item \textbf{Usability}\\
 	Funktional sind kostenlose Tools meist sehr weit entwickelt. Sie sind nicht selten sogar funktional besser als kommerzielle Tools, weil die Entwicklergemeinde selbst die Funktionalität nach vorne treibt und sogar neueste Entwicklungen einfließen. Ein Manko in vielen dieser Tools ist jedoch die Usability. Nur die größten der kostenlosen Tools schaffen es aufgrund des riesigen Entwicklerhintergrunds, auch die Usability im Auge zu behalten. Ein Beispiel ist Jenkins, bei dem lange Zeit UE/UX das größte Manko war und erst seit Einführung von "`Blue Ocean"' 2016 ist auch der Usability Aspekt in diesem sehr großen Projekt präsent.
 	\item \textbf{Regulatorische Einflüsse}\\
-	Ein weiterer Aspekt, der Aufmerksamkeit bedarf sind regulatorische Rahmenbedingungen. Man muss definitiv im Blick behalten, welchen Einfluss diese Toolentscheidung auf ein Audit hat. Wie intensiv ist das Tool getestet? Kann bei einem kommerziellen Tool eventuell ein Teil der Validierung durch eine vom Hersteller durchgeführte Validierung argumentiert werden? Wie ist der Sicherheitsaspekt zu bewerten (Man muss zum Beispiel für die FDA nachweisen wer zu welchem Zeitpunkt auf welche Artefakte Zugriff hatte, ein Sicherheitsvorfall wäre ein Desaster dafür)?\\
+	Ein weiterer Aspekt, der Aufmerksamkeit bedarf sind regulatorische Rahmenbedingungen. Man muss definitiv im Blick behalten, welchen Einfluss diese Tool Entscheidung auf ein Audit hat. Wie intensiv ist das Tool getestet? Kann bei einem kommerziellen Tool eventuell ein Teil der Validierung durch eine vom Hersteller durchgeführte Validierung ersetzt werden? Wie ist der Sicherheitsaspekt zu bewerten (Man muss zum Beispiel für die FDA nachweisen wer zu welchem Zeitpunkt auf welche Artefakte Zugriff hatte, ein Sicherheitsvorfall wäre ein Desaster dafür)?\\
 	Diese und weitere Fragen in Bezug auf regulatorische Rahmenbedingungen sind zu stellen, um eine adäquate Entscheidung treffen zu können.
 	\item \textbf{Rechtliche Bedingungen}\\
-	In der Softwareentwicklung gerade in sehr großen Unternehmen, sind die Kosten für ein System eher zu vernachlässigen. Viel gewichtiger sind rechtliche Absicherungen die man sich durch den Einsatz eines Tools eines finanzkräftigen Unternehmens einkauft. Falls ein Fehler auf einen Bug des CI Systems zurückzuführen ist, und das Unternehmen mit einem prozentualen Anteil des hohen Jahresumsatzes haften muss, so besteht prinzipiell die Chance etwas zurückzuholen. Bei einem kostenlosen Tool existiert dieser finanuzielle Hintergrund nicht. Deshalb ist eine Tendenz zu erkennen, je größer das Unternehmen ist, desto wahrscheinlicher ist der Einsatz eines kommerziellen Tools.
+	In der Softwareentwicklung gerade in sehr großen Unternehmen, sind die Kosten für ein System eher zu vernachlässigen. Viel gewichtiger sind rechtliche Absicherungen die man sich durch den Einsatz eines Tools eines finanzkräftigen Unternehmens einkauft. Falls ein Fehler auf einen Bug des CI Systems zurückzuführen ist, und das Unternehmen mit einem prozentualen Anteil des hohen Jahresumsatzes haften muss, so besteht prinzipiell die Chance etwas zurückzuholen. Bei einem kostenlosen Tool existiert dieser finanzielle Hintergrund nicht. Deshalb ist eine Tendenz zu erkennen, je größer das Unternehmen ist, desto wahrscheinlicher ist der Einsatz eines kommerziellen Tools.
 	\end{itemize}
 \section{Hosted vs. On-Premise}
 Auch dabei, ob man sich selbst um die Infrastruktur des Servers kümmert, oder ein fertiges Produkt mietet, kann man unterscheiden. Dabei gibt es mehrere Aspekte, die beachtet werden müssen, wobei ich einige herausgreifen möchte:
 \begin{itemize}
 	\item \textbf{Finanzielle Aspekte}\\
-	Von finanzieller Seite, muss man klar unterscheiden. Eigene Infrastuktur kostet erstmal Anschaffungskosten, verursacht dann aber auch während des Betriebs laufende Kosten wie Strom, Wartung und Arbeitszeit (was indirekt auch Kosten sind). Auf der anderen Seite bekommt man bei On-Premise Angeboten alles aus einer Hand, trägt kein finanzielles Risiko für Hardwareausfall, und muss dafür einen monatlichen Beitrag zahlen. Für eher kleine Projekte ist es wohl eher von Vorteil On-Premise zu verwenden, in großen Unternehmen und Projekten, wo eine Person sich nur um Build Automatisierung kümmern kann, ist dann wohl eher der eigene Server besser.
+	Von finanzieller Seite, muss man klar unterscheiden. Eigene Infrastuktur kostet zunächst Anschaffungskosten, verursacht dann aber auch während des Betriebs laufende Kosten wie Strom, Wartung und Arbeitszeit (was indirekt auch Kosten sind). Auf der anderen Seite bekommt man bei On-Premise Angeboten alles aus einer Hand, trägt kein finanzielles Risiko für Hardwareausfall, und muss dafür einen monatlichen Beitrag zahlen. Für eher kleine Projekte ist es daher von Vorteil On-Premise zu verwenden, in großen Unternehmen und Projekten, wo eine Person sich nur um Build Automatisierung kümmern kann, ist dann wohl eher der eigene Server besser.
 	\item \textbf{Nachvollziehbarkeit und Reproduzierbarkeit}\\
 	Ein anderer Aspekt ist vor allem für regulatorische Umgebungen wichtig. Hierbei muss es möglich sein, nachzuvollziehen was alles Auswirkungen auf das Ergebnis des Builds hatte. Dazu gehört auch die Build Umgebung selbst. Diese ist jedoch bei vielen On-Premise Angeboten nicht eindeutig zu identifizieren, da diese neue Features einfach live schalten. Auch ist es unmöglich einen Build mit einem bestimmten Stand der Build Automatisierung nochmals laufen zu lassen nach längerer Zeit. Man hat keine Chance, den alten Build Server wiederherzustellen.
 	\item \textbf{Datenschutz und Datensicherheit}\\
@@ -48,14 +48,14 @@ Bei Jenkins handelt es sich um ein OpenSource Produkt. Es wurde 2004 gestartet, 
   \end{tabularx}
 	\captionof{table}{Jenkins Fakten}
 \end{center}
-Ein Beispiel für das Userinterface von Jenkins ist in \autoref{fig:Jenkins-sample} zu sehen. Dabei ist zu beachten, dass hier bereits ein besonderes User Interface (Blue Ocean) und das Pipeline Plugin zu sehen sind. 
+Ein Beispiel für das User Interface von Jenkins ist in \autoref{fig:Jenkins-sample} zu sehen. Dabei ist zu beachten, dass hier bereits ein besonderes User Interface (Blue Ocean) und das Pipeline Plugin zu sehen sind. 
 \begin{figure}[H]
   \centering
   \fbox{\includegraphics[width=\textwidth]{./Images/Jenkins-sample.png}}
   \caption{Jenkins Weboberfläche \cite{Jenkins-Example}}\label{fig:Jenkins-sample}
 \end{figure}
 \subsection{TeamCity}
-TeamCity ist ein kommerzielles Produkt, das vor allem aus der .NET Welt kommt. Es ist in Java geschrieben und wurde bereits 2006 veröffentlicht. Jetbrains ist eine Firma, die viele Entwicklertools anbietet, um die Produktivität zu erhöhen. 
+TeamCity ist ein kommerzielles Produkt. Es ist in Java geschrieben und wurde bereits 2006 veröffentlicht. Jetbrains ist eine Firma, die viele Entwicklertools anbietet, um die Produktivität zu erhöhen. 
 \begin{center}
   \begin{tabularx}{\textwidth}{lX}
     \toprule
@@ -74,7 +74,7 @@ TeamCity ist ein kommerzielles Produkt, das vor allem aus der .NET Welt kommt. E
   \end{tabularx}
 	\captionof{table}{TeamCity Fakten \cite{TeamCity-Marketing}}
 \end{center}
-Ein Beispiel für das Userinterface von TeamCity ist in \autoref{fig:TC-continuous-integration} zu sehen. 
+Ein Beispiel für das User Interface von TeamCity ist in \autoref{fig:TC-continuous-integration} zu sehen. 
 
 \begin{figure}[H]
   \centering
@@ -83,8 +83,8 @@ Ein Beispiel für das Userinterface von TeamCity ist in \autoref{fig:TC-continuo
 \end{figure}
 
 \subsection{TFS}
-Der Teamfoundation Server ist die kommerzielle CI Lösung von Microsoft. Historisch kommt es aus dem .NET Umfeld, entwickelt sich aber in den letzten Jahren immer weiter in Richtung Open Source und CrossPlatform. So ist zum Beispiel die letzte Version der TFS Build Automatisierung lauffähig auf vielen verschiedenen Platformen wie z.B. Windows, Linux, MacOS.\\
-Auch sind große Teile der Build Automatisierung OpenSource und auf GitHub verfügbar.
+Der Team Foundation Server ist die kommerzielle CI Lösung von Microsoft. Historisch kommt es aus dem .NET Umfeld auf Windows, entwickelt sich aber in den letzten Jahren immer weiter in Richtung Open Source und CrossPlatform. So ist zum Beispiel die letzte Version der TFS Build Automatisierung lauffähig auf vielen verschiedenen Platformen wie z.B. Windows, Linux, MacOS.\\
+Auch sind große Teile der Build Automatisierung Open Source und auf GitHub verfügbar.
 \begin{center}
   \begin{tabularx}{\textwidth}{lX}
     \toprule
@@ -119,7 +119,7 @@ Travis-CI ist ein reiner On-Premise OnlineService. Er erlaubt es automatisch mit
     \midrule
     Firma &  TRAVIS CI, GMBH \\
 		\addlinespace
-    Kosten & Travis-CI ist OpenSource. Es ist kostenlos für OpenSource Projekte. Für alle anderen ist es kostenpflichtig.\\
+    Kosten & Travis-CI ist kostenlos für OpenSource Projekte. Für alle anderen ist es kostenpflichtig.\\
 		\addlinespace
 		Version & 2.2.1 \\
 		\addlinespace
@@ -130,7 +130,7 @@ Travis-CI ist ein reiner On-Premise OnlineService. Er erlaubt es automatisch mit
   \end{tabularx}
 	\captionof{table}{Travis Fakten \cite{Travis-docu}}
 \end{center}
-Ein Beispiel für das Userinterface von Travis ist in \autoref{fig:travis} zu sehen. 
+Ein Beispiel für das User Interface von Travis ist in \autoref{fig:travis} zu sehen. 
 
 \begin{figure}[H]
   \centering

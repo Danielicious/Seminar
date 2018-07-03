@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Seminararbeit.tex
 
 [Frame0_View0,0]
-TopLine=433
-Cursor=21619
+TopLine=54
+Cursor=2078
 
 [Frame1]
 Flags=0
@@ -35,7 +35,7 @@ Class=BibTeXView
 Document=Literatur.bib
 
 [Frame1_View0,0]
-TopLine=207
+TopLine=212
 Cursor=3326
 
 [Frame2]
@@ -54,7 +54,7 @@ Document=chapter\Einleitung.tex
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=737
+Cursor=1497
 
 [Frame3]
 Flags=0
@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=chapter\Continuous-Integration.tex
 
 [Frame3_View0,0]
-TopLine=183
-Cursor=19111
+TopLine=216
+Cursor=21899
 
 [Frame4]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=chapter\Toolübersicht.tex
 
 [Frame4_View0,0]
-TopLine=141
-Cursor=10582
+TopLine=162
+Cursor=10895
 
 [Frame5]
 Flags=0
@@ -108,7 +108,7 @@ Document=chapter\Jenkins.tex
 
 [Frame5_View0,0]
 TopLine=62
-Cursor=7994
+Cursor=7233
 
 [Frame6]
 Flags=0
@@ -125,8 +125,8 @@ Class=LaTeXView
 Document=chapter\Anwendung.tex
 
 [Frame6_View0,0]
-TopLine=3
-Cursor=954
+TopLine=31
+Cursor=4200
 
 [SessionInfo]
 FrameCount=7
