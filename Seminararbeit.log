@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.6.10)  4 JUL 2018 01:46
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6630 64-bit) (preloaded format=xelatex 2018.6.10)  4 JUL 2018 18:07
 entering extended mode
 **./Seminararbeit.tex
 (Seminararbeit.tex
@@ -1122,7 +1122,20 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 ) (Seminararbeit.aux
 (chapter/Einleitung.aux) (chapter/Continuous-Integration.aux) (chapter/Toolübersicht.aux) (chapter/Jenkins.aux)
-(chapter/Anwendung.aux))
+(chapter/Anwendung.aux) (chapter/Fazit.aux
+
+LaTeX Warning: Label `fig:Schema-Travis' multiply defined.
+
+
+LaTeX Warning: Label `fig:OpenConjurerFramework' multiply defined.
+
+
+LaTeX Warning: Label `fig:Schema-Jenkins' multiply defined.
+
+
+LaTeX Warning: Label `fig:Schema-TFS' multiply defined.
+
+))
 \openout1 = `Seminararbeit.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -1259,24 +1272,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 ) [1
 
-] (Seminararbeit.toc)
+] (Seminararbeit.toc [1
+
+])
 \tf@toc=\write6
 \openout6 = `Seminararbeit.toc'.
 
- [1
-
-] (Seminararbeit.lof)
+ [2] (Seminararbeit.lof)
 \tf@lof=\write7
 \openout7 = `Seminararbeit.lof'.
 
 
-[2
+[3
 
 ] (Seminararbeit.lot)
 \tf@lot=\write8
 \openout8 = `Seminararbeit.lot'.
 
- [3
+ [4
 
 ]
 \openout2 = `./chapter/Einleitung.aux'.
@@ -1307,7 +1320,7 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 . - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"Linux
 . Libertine/BI/OT:script=latn;language=DFLT;+sups;+smcp;mapping=tex-text;"
 .................................................
-) [4
+) [5
 
 
 ]
@@ -1322,7 +1335,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
-[5
+[6
 
 
 
@@ -1331,7 +1344,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
-[6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
@@ -1353,7 +1366,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
-[7] [8] [9] [10] [11]) [12]
+[8] [9] [10] [11] [12]) [13]
 \openout2 = `./chapter/Toolübersicht.aux'.
 
  (chapter/Toolübersicht.tex
@@ -1363,11 +1376,11 @@ Overfull \hbox (0.60764pt too wide) in paragraph at lines 8--10
 \TU/LinuxLibertine(0)/m/n/10.95 Zunächst ist zu erwähnen, dass bestimmte Rahmenbedingungen für Unternehmen beziehungs-
  []
 
-[13
+[14
 
 
 
-] [14]
+] [15]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 49.
@@ -1380,7 +1393,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
-[15]
+[16]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 75.
@@ -1393,7 +1406,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 81--82
  [][] 
  []
 
-[16]
+[17]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 104.
@@ -1406,7 +1419,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
-[17]
+[18]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 131.
@@ -1419,7 +1432,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
-) [18] [19]
+) [19] [20]
 \openout2 = `./chapter/Jenkins.aux'.
 
  (chapter/Jenkins.tex
@@ -1431,7 +1444,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--18
 \TU/LinuxLibertine(0)/m/n/10.95 tem.
  []
 
-[20
+[21
 
 
 
@@ -1441,12 +1454,12 @@ Underfull \hbox (badness 1675) in paragraph at lines 18--20
  []
 
 
-LaTeX Warning: Reference `fig:Jenkins_installation_and_setup' on page 21 undefined on input line 26.
+LaTeX Warning: Reference `fig:Jenkins_installation_and_setup' on page 22 undefined on input line 26.
 
 
-LaTeX Warning: Reference `fig:Jenkins_installation_and_setup' on page 21 undefined on input line 28.
+LaTeX Warning: Reference `fig:Jenkins_installation_and_setup' on page 22 undefined on input line 28.
 
-[21]
+[22]
 File: ./Images/Screenshot1.png Graphic file (type bmp)
 <./Images/Screenshot1.png>
 
@@ -1454,7 +1467,7 @@ Underfull \hbox (badness 1184) in paragraph at lines 35--35
 []\TU/LinuxLibertine(0)/m/n/10.95 Abbildung 3.2: |Microsoft Azure Jenkins Ange-
  []
 
-) [22] [23]
+) [23] [24]
 \openout2 = `./chapter/Anwendung.aux'.
 
  (chapter/Anwendung.tex
@@ -1468,7 +1481,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 10--11
 
 File: ./Images/OpenConjurerFramework.png Graphic file (type bmp)
 <./Images/OpenConjurerFramework.png>
-[24
+[25
 
 
 
@@ -1487,68 +1500,80 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
-[25]) [26]
+[26]) [27]
+\openout2 = `./chapter/Fazit.aux'.
 
-Package biblatex Warning: Type 'report' not found on input line 319.
+ (chapter/Fazit.tex
+Kapitel 5.
+) [28
 
 
-LaTeX Warning: Empty bibliography on input line 319.
+
+]
+
+Package biblatex Warning: Type 'report' not found on input line 320.
 
 
-Overfull \hbox (28.56528pt too wide) in paragraph at lines 321--321
+LaTeX Warning: Empty bibliography on input line 320.
+
+
+Overfull \hbox (28.56528pt too wide) in paragraph at lines 322--322
 []\TU/LinuxLibertine(0)/m/n/10.95 Martin Fowler. \TU/LinuxLibertine(0)/m/it/10.95 TestPyramid\TU/LinuxLibertine(0)/m/n/1
 0.95 . Scientific article, 01 Mai 2012. 2012. \TU/LinuxLibertine(0)/m/sc/10.95 url\TU/LinuxLibertine(0)/m/n/10.95 : []$[
 ][][][][] [] [] [] [][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (1.28722pt too wide) in paragraph at lines 321--321
+Overfull \hbox (1.28722pt too wide) in paragraph at lines 322--322
 \TU/LinuxLibertine(0)/m/it/10.95 DELIVERY UND CONTINUOUS DEPLOYMENT\TU/LinuxLibertine(0)/m/n/10.95 . Overview and relati
 ons. 2015. \TU/LinuxLibertine(0)/m/sc/10.95 url\TU/LinuxLibertine(0)/m/n/10.95 : []$[][][][][] []
  []
 
 
-Overfull \hbox (17.31471pt too wide) in paragraph at lines 321--321
+Overfull \hbox (17.31471pt too wide) in paragraph at lines 322--322
 [] [] [][][] [] [][][][][] [] [][] [] [][][][][][][][][][][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [][] [][]
 [][][][][][][][][] [][] [][][][][][][][][][] [][]
  []
 
-[27
+[29
 
 
 ]
-Overfull \hbox (5.05855pt too wide) in paragraph at lines 321--321
+Overfull \hbox (5.05855pt too wide) in paragraph at lines 322--322
 []\TU/LinuxLibertine(0)/m/n/10.95 Jenkins. \TU/LinuxLibertine(0)/m/it/10.95 Installing Jenkins\TU/LinuxLibertine(0)/m/n/
 10.95 . Different installation instructions for Jenkins. 2018. \TU/LinuxLibertine(0)/m/sc/10.95 url\TU/LinuxLibertine(0)
 /m/n/10.95 : []$[][][][][] []
  []
 
-[28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
- [29
+[30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
+ [31
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
  (Seminararbeit.aux (chapter/Einleitung.aux) (chapter/Continuous-Integration.aux) (chapter/Toolübersicht.aux)
-(chapter/Jenkins.aux) (chapter/Anwendung.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 375.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 375.
+(chapter/Jenkins.aux) (chapter/Anwendung.aux) (chapter/Fazit.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 376.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 376.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'Seminararbeit.run.xml'.
 \openout1 = `Seminararbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31619 strings out of 427836
- 580317 string characters out of 3153424
+ 31628 strings out of 427836
+ 580459 string characters out of 3153424
  1066636 words of memory out of 3000000
- 35273 multiletter control sequences out of 15000+200000
+ 35275 multiletter control sequences out of 15000+200000
  550640 words of font info for 95 fonts, out of 3000000 for 9000
  1330 hyphenation exceptions out of 8191
  46i,11n,79p,10463b,6513s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminararbeit.pdf (30 pages).
+Output written on Seminararbeit.pdf (32 pages).
