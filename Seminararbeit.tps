@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=Seminararbeit.tex
 
 [Frame0_View0,0]
-TopLine=54
-Cursor=2078
+TopLine=407
+Cursor=15461
 
 [Frame1]
 Flags=0
@@ -35,7 +35,7 @@ Class=BibTeXView
 Document=Literatur.bib
 
 [Frame1_View0,0]
-TopLine=212
+TopLine=232
 Cursor=3326
 
 [Frame2]
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=chapter\Einleitung.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=1497
+TopLine=17
+Cursor=1764
 
 [Frame3]
 Flags=0
@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=chapter\Continuous-Integration.tex
 
 [Frame3_View0,0]
-TopLine=216
-Cursor=21899
+TopLine=0
+Cursor=231
 
 [Frame4]
 Flags=0
@@ -126,9 +126,27 @@ Document=chapter\Anwendung.tex
 
 [Frame6_View0,0]
 TopLine=31
-Cursor=4200
+Cursor=3424
+
+[Frame7]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1511
+NormalPos.bottom=674
+Class=LaTeXView
+Document=chapter\Fazit.tex
+
+[Frame7_View0,0]
+TopLine=0
+Cursor=774
 
 [SessionInfo]
-FrameCount=7
+FrameCount=8
 ActiveFrame=0
 

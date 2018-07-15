@@ -4,34 +4,34 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Übersicht über verschiedene Begriffe \cite {Begriff-Overview}\relax }}{9}{figure.caption.5}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Einordnung von CI und ähnlicher Begriffe \cite {Begriff-Overview}\relax }}{8}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Schematischer Ablauf von CI\relax }}{9}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Jenkins Weboberfläche \cite {Jenkins-Example}\relax }}{17}{figure.caption.7}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Jenkins Weboberfläche \cite {Jenkins-Example}\relax }}{16}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Teamcity Weboberfläche \cite {TeamCity-Marketing}\relax }}{18}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Teamcity Weboberfläche \cite {TeamCity-Marketing}\relax }}{17}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces TFS Weboberfläche \cite {TFS-Marketing}\relax }}{19}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces TFS Weboberfläche \cite {TFS-Marketing}\relax }}{18}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Travis Weboberfläche \cite {Travis-build}\relax }}{20}{figure.caption.10}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Unterstützte Betriebssystem auf der Jenkins Seite\cite {jenkins-download}\relax }}{22}{figure.caption.11}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Microsoft Azure Jenkins Angebot\cite {jenkins-azure}\relax }}{23}{figure.caption.15}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Travis Weboberfläche \cite {Travis-build}\relax }}{19}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Vereinfachter Travis-CI Prozess\relax }}{25}{figure.caption.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Unterstützte Betriebssysteme auf der Jenkins Seite\cite {jenkins-download}\relax }}{21}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces GitHub Seite mit Build Badge\relax }}{26}{figure.caption.17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Microsoft Azure Jenkins Angebot\cite {jenkins-azure}\relax }}{22}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Vereinfachter Jenkins Prozess mit Agents\relax }}{26}{figure.caption.18}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Vereinfachter TFS Prozess mit nachgelagerten asynchronen Tests\relax }}{27}{figure.caption.19}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Vereinfachter Travis-CI Prozess\relax }}{24}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces GitHub Seite mit Build Badge\relax }}{25}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Vereinfachter Jenkins Prozess mit Agents\relax }}{26}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Vereinfachter TFS Prozess mit nachgelagerten asynchronen Tests\relax }}{27}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
