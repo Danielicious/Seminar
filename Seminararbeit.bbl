@@ -134,6 +134,35 @@
       \verb https://martinfowler.com/articles/continuousIntegration.html
       \endverb
     \endentry
+    \entry{TFS-GC}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=18b50564bbf5a4c6693b6f6ab5bf6eea}{%
+           family={Carnahan},
+           familyi={C\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{18b50564bbf5a4c6693b6f6ab5bf6eea}
+      \strng{fullhash}{18b50564bbf5a4c6693b6f6ab5bf6eea}
+      \strng{bibnamehash}{18b50564bbf5a4c6693b6f6ab5bf6eea}
+      \strng{authorbibnamehash}{18b50564bbf5a4c6693b6f6ab5bf6eea}
+      \strng{authornamehash}{18b50564bbf5a4c6693b6f6ab5bf6eea}
+      \strng{authorfullhash}{18b50564bbf5a4c6693b6f6ab5bf6eea}
+      \field{labelalpha}{Car09}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Blog entry 29.06.2009}
+      \field{title}{TFS 2010 – An Introduction to Gated Check-in}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://blogs.msdn.microsoft.com/patcarna/2009/06/29/tfs-2010-an-introduction-to-gated-check-in/
+      \endverb
+      \verb{url}
+      \verb https://blogs.msdn.microsoft.com/patcarna/2009/06/29/tfs-2010-an-introduction-to-gated-check-in/
+      \endverb
+    \endentry
     \entry{smart2011jenkins}{book}{}
       \name{author}{1}{}{%
         {{hash=20a60c6edeae9eee6da226a2084ec11b}{%
@@ -344,6 +373,62 @@
       \endverb
       \verb{url}
       \verb https://www.scrum.de/unterschiede-zwischen-continuous-integration-continuous-delivery-und-continuous-deployment/
+      \endverb
+    \endentry
+    \entry{Jenkins-UX}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f8c08dfe3bc50aa85c15b40ca4d80e16}{%
+           family={Dumay},
+           familyi={D\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8c08dfe3bc50aa85c15b40ca4d80e16}
+      \strng{fullhash}{f8c08dfe3bc50aa85c15b40ca4d80e16}
+      \strng{bibnamehash}{f8c08dfe3bc50aa85c15b40ca4d80e16}
+      \strng{authorbibnamehash}{f8c08dfe3bc50aa85c15b40ca4d80e16}
+      \strng{authornamehash}{f8c08dfe3bc50aa85c15b40ca4d80e16}
+      \strng{authorfullhash}{f8c08dfe3bc50aa85c15b40ca4d80e16}
+      \field{labelalpha}{Dum16}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Introduction of improved UX for Jenkins, 26.05.2016}
+      \field{title}{Introducing Blue Ocean: a new user experience for Jenkins}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://jenkins.io/blog/2016/05/26/introducing-blue-ocean/
+      \endverb
+      \verb{url}
+      \verb https://jenkins.io/blog/2016/05/26/introducing-blue-ocean/
+      \endverb
+    \endentry
+    \entry{Docker-Win10}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{labelalpha}{Mic16}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Introduction to Containers on Win10, 26.09.2016}
+      \field{title}{Windows Containers on Windows 10}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://docs.microsoft.com/de-de/virtualization/windowscontainers/quick-start/quick-start-windows-10
+      \endverb
+      \verb{url}
+      \verb https://docs.microsoft.com/de-de/virtualization/windowscontainers/quick-start/quick-start-windows-10
       \endverb
     \endentry
     \entry{Begriff-Overview}{misc}{}
@@ -569,6 +654,34 @@
       \verb https://jenkins.io/doc/administration/requirements/java/
       \endverb
     \endentry
+    \entry{Jenkins-Plugins}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2e54334c0a5ce2e3e5a5845df3ab3ada}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{fullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{bibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorbibnamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authornamehash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \strng{authorfullhash}{2e54334c0a5ce2e3e5a5845df3ab3ada}
+      \field{labelalpha}{Jen18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extraalpha}{6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Download site for Jenkins Plugins}
+      \field{title}{Jenkins Plugins}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://plugins.jenkins.io/
+      \endverb
+      \verb{url}
+      \verb https://plugins.jenkins.io/
+      \endverb
+    \endentry
     \entry{TeamCity-Marketing}{misc}{}
       \name{author}{1}{}{%
         {{hash=f84bd4b4caa44b11103f3eba38223a9c}{%
@@ -623,6 +736,35 @@
       \verb https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azure-oss.jenkins
       \endverb
     \endentry
+    \entry{Jenkins-GC}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d0881b69b30f70c4d5bc8eeaf18beea5}{%
+           family={Petersen},
+           familyi={P\bibinitperiod},
+           given={Bue},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0881b69b30f70c4d5bc8eeaf18beea5}
+      \strng{fullhash}{d0881b69b30f70c4d5bc8eeaf18beea5}
+      \strng{bibnamehash}{d0881b69b30f70c4d5bc8eeaf18beea5}
+      \strng{authorbibnamehash}{d0881b69b30f70c4d5bc8eeaf18beea5}
+      \strng{authornamehash}{d0881b69b30f70c4d5bc8eeaf18beea5}
+      \strng{authorfullhash}{d0881b69b30f70c4d5bc8eeaf18beea5}
+      \field{labelalpha}{Pet18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Version 3.0.1 of the wiki page, 27.02.2018}
+      \field{title}{Pretested Integration Plugin}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://wiki.jenkins.io/display/JENKINS/Pretested+Integration+Plugin
+      \endverb
+      \verb{url}
+      \verb https://wiki.jenkins.io/display/JENKINS/Pretested+Integration+Plugin
+      \endverb
+    \endentry
     \entry{Travis-build}{misc}{}
       \name{author}{1}{}{%
         {{hash=c36c156cf3bc847e954b0f3ff8493e64}{%
@@ -651,7 +793,7 @@
       \verb https://docs.travis-ci.com/user/build-stages/
       \endverb
     \endentry
-    \entry{Travis-docu}{misc}{}
+    \entry{Travis-getting-started}{misc}{}
       \name{author}{1}{}{%
         {{hash=c36c156cf3bc847e954b0f3ff8493e64}{%
            family={Travis-CI},
@@ -667,6 +809,34 @@
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Getting started guide inside Travis CI WIKI}
+      \field{title}{Getting started - Travis CI}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://docs.travis-ci.com/user/getting-started
+      \endverb
+      \verb{url}
+      \verb https://docs.travis-ci.com/user/getting-started
+      \endverb
+    \endentry
+    \entry{Travis-docu}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c36c156cf3bc847e954b0f3ff8493e64}{%
+           family={Travis-CI},
+           familyi={T\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c36c156cf3bc847e954b0f3ff8493e64}
+      \strng{fullhash}{c36c156cf3bc847e954b0f3ff8493e64}
+      \strng{bibnamehash}{c36c156cf3bc847e954b0f3ff8493e64}
+      \strng{authorbibnamehash}{c36c156cf3bc847e954b0f3ff8493e64}
+      \strng{authornamehash}{c36c156cf3bc847e954b0f3ff8493e64}
+      \strng{authorfullhash}{c36c156cf3bc847e954b0f3ff8493e64}
+      \field{labelalpha}{Tra18}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extraalpha}{3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Documentation Wiki of Travis-CI}
