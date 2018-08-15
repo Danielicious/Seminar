@@ -283,6 +283,113 @@ Schematischer Ablauf von CI, wie er von Martin Fowler beschrieben wird
 
 \subsection{Ablauf nach Martin Fowler}
 \begin{frame} [t]
+\only<1>{
+\frametitle{Baseline holen}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau1.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Entwickler holt sich Baseline
+}
+\only<2>{
+\frametitle{Implementierung durchführen}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau2.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Die angestrebten Implementierungen werden durchgeführt
+}
+\only<3>{
+\frametitle{Lokaler Build und Test}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau3.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Lokaler Build mit Tests als erstes Quality Gate
+}
+\only<4>{
+\frametitle{Source Code Delta holen}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau4.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Zwischenzeitlich aufgelaufene Änderungen anderer Entwickler vom SCM holen
+}
+\only<5>{
+\frametitle{Konflikte lösen}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau5.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Neu entstandene Konflikte lokal auflösen
+}
+\only<6>{
+\frametitle{Lokaler Build II}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau6.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Lokaler Build mit Tests als letzes Quality Gate vor dem Checkin
+}
+\only<7>{
+\frametitle{Checkin}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau7.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Nach erfolgreichem lokalen Build sind die Änderungen reif für den Checkin
+}
+\only<8>{
+\frametitle{Trigger Build}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau8.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Ein automatischer Build startet, weil im SCM neue Sourcen vorhanden sind
+}
+\only<9>{
+\frametitle{Aktuellen Stand holen}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau9.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Der Build Server braucht die letzten Sourcen um sie zu bauen und zu testen
+}
+\only<10>{
+\frametitle{Bauen am Server}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau10.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Der Server Build ist das ultimative Quality Gate im Prozess.\\
+In diesem Schritt wird gebaut und getestet.
+}
+\only<11>{
+\frametitle{Feedback}
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=110mm]{./Images/Schema-aufbau11.png}}	  
+\end{figure}
+\vspace{0.5cm} 
+Das Ergebnis des Builds wird veröffentlicht und ruft eventuell weitere Aktionen des Entwicklers hervor.
+}
+\end{frame}
+
+
+
+\iffalse
+\subsection{Ablauf nach Martin Fowler}
+\begin{frame} [t]
 \frametitle{Baseline holen}
 \begin{figure}[h]
   \centering
@@ -402,7 +509,7 @@ In diesem Schritt wird gebaut und getestet.
 \vspace{0.5cm} 
 Das Ergebnis des Builds wird veröffentlicht und ruft eventuell weitere Aktionen des Entwicklers hervor.
 \end{frame}
-
+\fi
 \section*{Vielen Dank}
 
 \begin{frame} 

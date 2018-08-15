@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=vortrag.tex
 
 [Frame0_View0,0]
-TopLine=123
-Cursor=3717
+TopLine=394
+Cursor=11025
 
 [Frame1]
 Flags=0

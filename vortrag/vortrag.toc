@@ -8,13 +8,3 @@
 \beamer@subsectionintoc {3}{6}{Abgrenzung zu anderen Begriffen III}{20}{0}{1}
 \beamer@subsectionintoc {3}{7}{Ablauf von Continuous Integration}{21}{0}{1}
 \beamer@subsectionintoc {3}{8}{Ablauf nach Martin Fowler}{22}{0}{1}
-\beamer@subsectionintoc {3}{9}{Ablauf nach Martin Fowler}{23}{0}{1}
-\beamer@subsectionintoc {3}{10}{Ablauf nach Martin Fowler}{24}{0}{1}
-\beamer@subsectionintoc {3}{11}{Ablauf nach Martin Fowler}{25}{0}{1}
-\beamer@subsectionintoc {3}{12}{Ablauf nach Martin Fowler}{26}{0}{1}
-\beamer@subsectionintoc {3}{13}{Ablauf nach Martin Fowler}{27}{0}{1}
-\beamer@subsectionintoc {3}{14}{Ablauf nach Martin Fowler}{28}{0}{1}
-\beamer@subsectionintoc {3}{15}{Ablauf nach Martin Fowler}{29}{0}{1}
-\beamer@subsectionintoc {3}{16}{Ablauf nach Martin Fowler}{30}{0}{1}
-\beamer@subsectionintoc {3}{17}{Ablauf nach Martin Fowler}{31}{0}{1}
-\beamer@subsectionintoc {3}{18}{Ablauf nach Martin Fowler}{32}{0}{1}
