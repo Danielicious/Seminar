@@ -2,8 +2,8 @@ name: Compile Seminar to PDF
 
 on: 
  push:
-    paths:
-      - '*'
+    #paths:
+    #  - '*'
 
 jobs:
   build:
